@@ -1,0 +1,35 @@
+.scroll-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+background: rgba(255, 255, 255, 0.15);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11.8px);
+-webkit-backdrop-filter: blur(11.8px);
+border: 1px solid rgba(255, 255, 255, 0.69);
+    color: #1b264f;
+    border: none;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    transition:0.4s;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s ease-in-out;
+  }
+  
+  .scroll-to-top-button.visible {
+    transition:  0.4s;
+    display: flex;
+  }
+  
+  .scroll-to-top-button:hover {
+    background-color: #d0fef5;
+  }
+  
