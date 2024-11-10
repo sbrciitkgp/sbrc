@@ -22,8 +22,8 @@ function Footer() {
                 </HashLink>
               </a>
               <p>
-                Students' Branding and Relations cell is a student body under
-                the aegis of the Office of Alumni Affairs and Branding.
+                Students' Branding and Relations Cell is a student body under
+                the aegis of the Office of Alumni Affairs & International Relations.
               </p>
               <div class="social-links d-flex mt-4">
                 <a
@@ -147,7 +147,7 @@ function Footer() {
               <h4>Contact Us</h4>
               <p>
                 Students' Branding and Relations Cell <br />
-                Office of Alumni Affairs & Branding
+                Office of Alumni Affairs & International Relations
                 <br />
                 Indian Institute of Technology, Kharagpur Pin-721302
                 <br /> West Bengal, India
