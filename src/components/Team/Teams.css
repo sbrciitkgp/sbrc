@@ -18,6 +18,7 @@
     position: relative;
     overflow: hidden;
     object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
     
 }
 .our-team .team_img:after{
@@ -42,6 +43,14 @@
 }
 .head-img{
     border-radius: 20px 20px 0 0;
+    background-color: #C8E7FF;
+    overflow: hidden !important;
+
+}
+.scale{
+    /* border-top-right-radius: 40px; */
+    scale:1.4;
+    overflow: hidden;
 }
 .our-team .social-team{
     padding: 0 0 18px 0;

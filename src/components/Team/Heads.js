@@ -7,7 +7,7 @@ import abhi from "./Heads/abhi.jpeg";
 import shrnsh from "./Heads/sharansh.jpg";
 import ajay from "./Heads/ajay.png";
 import vishal from "./Heads/Vishal Arya.jpeg";
-import amogh  from "./Heads/image.png";
+import amogh  from "./Heads/Amogh.png";
 import nikhil from "./Heads/Nikhil.jpg";
 import praneeth from "./Heads/Praneeth.jpg";
 import mohit from "./Heads/mohit.jpg";

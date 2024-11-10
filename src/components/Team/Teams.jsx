@@ -233,7 +233,7 @@ function Teams() {
               })}
             </div>
             <div className="events">
-              {publicHead2024.map((event) => {
+              {publicHead2024.map((event,index) => {
                 return (
                   <div
                     key={event.name}
@@ -242,7 +242,7 @@ function Teams() {
                     <div className="our-team">
                       <motion.div className="team_img">
                         <motion.img
-                          className="head-img"
+                          className={`head-img ${index==0? 'scale':""}`}
                           src={event.img}
                         ></motion.img>
                         <ul className="social-team">
