@@ -31,7 +31,7 @@ function ContactInfo() {
         <div className="information">
           <p>
             Students' Branding and Relations Cell
-            <br /> Office of Alumni Affairs & Branding
+            <br /> Office of Alumni Affairs & International Relations 
             <br />
             Indian Institute of Technology, Kharagpur Pin-721302
             <br /> West Bengal, India
@@ -59,24 +59,24 @@ function ContactInfo() {
           </button>
         </div>
         <p className="title-info">Call Us</p>
-        <p className="text">Mr. Aishwary Patel</p>
+        <p className="text">Praneeth Kumar</p>
         <div className="information">
           <p>
-            <a style={{ color: "inherit" }} href="tel:+91-9630271203">
-              +91-9630271203
+            <a style={{ color: "inherit" }} href="tel:+91 7416449233">
+              +91 7416449233
             </a>
             <br />
-            aishwarypatel2004@gmail.com
+            praneeth.sudhagani.barc.iitkgp@gmail.com
           </p>
         </div>
-        <p className="text">Ms. Bhumi Tayal</p>
+        <p className="text">Anushika Srivastava</p>
         <div className="information">
           <p>
-            <a style={{ color: "inherit" }} href="tel:+91-7684067297">
-              +91-7684067297
+            <a style={{ color: "inherit" }} href="tel: +91 7999850015">
+              +91 7999850015
             </a>
             <br />
-            tayalbhumi8@gmail.com
+            anushikashrivastava2004@gmail.com
           </p>
         </div>
       </div>
