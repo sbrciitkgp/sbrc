@@ -1,169 +1,126 @@
 import dummy from "./SM/dummy.jpg";
-import Akshat from "./SM/Akshat.jpg";
-import Anup from "./SM/Anup.jpg";
-import Anushika from "./SM/Anushika.jpg";
-import Anvesh from "./SM/Anvesh.png";
-import Asmit from "./SM/Asmit.jpg";
-import Ben from "./SM/Ben.jpg";
-import Devika from "./SM/Devika.jpg";
+import Anamika from "./SM/Anamika.jpg";
+import Animesh from "./SM/Animesh.jpg";
+import Archisa from "./SM/Archisa.jpg";
 import Dhruv from "./SM/Dhruv.jpg";
-import Gnaneswar from "./SM/Gnaneswar.jpg";
-import Jatain from "./SM/Jatain.jpg";
-import Jeevan from "./SM/Jeevan.jpg";
-import Manash from "./SM/Manash.jpg";
-import Mohit from "./SM/Mohit.jpg";
-import Nikhil from "./SM/Nikhil.jpg";
-import Ranjeeta from "./SM/Ranjeeta.jpg";
-import Sai from "./SM/Sai.jpg";
-import Shubham from "./SM/Shubham.jpg";
-import Swara from "./SM/Swara.jpg";
-import Uma from "./SM/Uma.jpg";
-import Vaibhav from "./SM/Vaibhav.jpg";
-import Praneeth from "./SM/Praneeth.jpg";
+import Isha from "./SM/Isha.jpg";
+import Namanya from "./SM/Namanya.jpg";
+import Rahul from "./SM/Rahul.jpg";
+import Saksham from "./SM/Saksham.jpg";
+import Shivaji from "./SM/Shivaji.jpg";
+import Vasanth from "./SM/Vasanth.jpg";
+import Vishakha from "./SM/Vishakha.jpg";
+import Vishal from "./SM/Vishal.jpg";
+
 
 const studData = [
   {
-    name: "Akshat Sharma",
-    img: Akshat,
-    pos: "Student Member",
-  },
-
-  {
-    name: "Amogh Ubhalkar",
+    name: "Abhinav",
     img: dummy,
     pos: "Student Member",
   },
   {
-    name: "Aniket Thakare",
-    img: dummy,
-    pos: "Student Member",
-  },
-
-  {
-    name: "Anup Kumar",
-    img: Anup,
+    name: "Anamika",
+    img: Anamika,
     pos: "Student Member",
   },
   {
-    name: "Anushika Srivastava",
-    img: Anushika,
+    name: "Animesh Mondal",
+    img: Animesh,
     pos: "Student Member",
   },
   {
-    name: "Anvesh Rajguru",
-    img: Anvesh,
-    pos: "Student Member",
-  },
-  {
-    name: "Aryal Katkar",
+    name: "Annangi Neeraj Kumar",
     img: dummy,
     pos: "Student Member",
   },
   {
-    name: "Asmit Srivastava",
-    img: Asmit,
+    name: "Archisa Paul",
+    img: Archisa,
     pos: "Student Member",
   },
   {
-    name: "Ben Abraham Biju",
-    img: Ben,
+    name: "Baki Vasanth",
+    img: Vasanth,
     pos: "Student Member",
   },
   {
-    name: "Chavi Agarwal",
+    name: "Dhanraj Patil",
     img: dummy,
     pos: "Student Member",
   },
   {
-    name: "Devika K V",
-    img: Devika,
+    name: "Dharavath Shivaji",
+    img: Shivaji,
     pos: "Student Member",
   },
   {
-    name: "Dhruv Rai",
+    name: "Dhruv Sailor",
     img: Dhruv,
     pos: "Student Member",
   },
-
   {
-    name: "Jatain Kumar",
-    img: Jatain,
+    name: "Esam Ashok",
+    img: dummy,
     pos: "Student Member",
   },
   {
-    name: "Gnaneswar Karakavalasa",
-    img: Gnaneswar,
+    name: "Himanshu Raj",
+    img: dummy,
     pos: "Student Member",
   },
   {
-    name: "Konduri Jeevan Varma",
-    img: Jeevan,
+    name: "Isha Singhal",
+    img: Isha,
     pos: "Student Member",
   },
   {
-    name: "Manash Shit",
-    img: Manash,
+    name: "Namanya Pant",
+    img: Namanya,
     pos: "Student Member",
   },
   {
-    name: "Mohit Pant",
-    img: Mohit,
+    name: "Rahul R S",
+    img: Rahul,
     pos: "Student Member",
   },
   {
-    name: "Nikhil Yadav",
-    img: Nikhil,
+    name: "Saksham Sinha",
+    img: Saksham,
     pos: "Student Member",
   },
-
   {
-    name: "Priyadarshi Shaket",
+    name: "Samridhi Rastogi",
+    img: dummy,
+    pos: "Student Member",
+  },
+  {
+    name: "Shashi Vallabh Makkapati",
+    img: dummy,
+    pos: "Student Member",
+  },
+  {
+    name: "Siddhi Datri ",
+    img: dummy,
+    pos: "Student Member",
+  },
+  {
+    name: "Vishakha Priya",
+    img: Vishakha,
+    pos: "Student Member",
+  },
+  {
+    name: "Vishal Kumar ",
+    img: Vishal,
+    pos: "Student Member",
+  },
+  {
+    name: "Zalavadiya Dishil",
     img: dummy,
     pos: "Student Member",
   },
 
-  {
-    name: "Ranjeeta Mashal",
-    img: Ranjeeta,
-    pos: "Student Member",
-  },
-
-  {
-    name: "S Praneeth Kumar",
-    img: Praneeth,
-    pos: "Student Member",
-  },
-  {
-    name: "Sai Vishwas Aluvala",
-    img: Sai,
-    pos: "Student Member",
-  },
-
-  {
-    name: "Shubham Pingale",
-    img: Shubham,
-    pos: "Student Member",
-  },
-  {
-    name: "Mohite Swara Nandkishor",
-    img: Swara,
-    pos: "Student Member",
-  },
-  {
-    name: "B. Uma Chandra Shekar Naik",
-    img: Uma,
-    pos: "Student Member",
-  },
-  {
-    name: "Vaibhav Chakole",
-    img: Vaibhav,
-    pos: "Student Member",
-  },
-  {
-    name: "Snehal Tengse",
-    img: dummy,
-    pos: "Student Member",
-  },
+ 
 ];
 
 export default studData;

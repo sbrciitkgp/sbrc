@@ -1,236 +1,102 @@
 const asmData = [
   {
-    name: "A Neeraj Kumar",
+    name: "Ameya Reddy",
     pos: "Associate Member",
   },
   {
-    name: "Aninda Bera",
+    name: "Anjali Chenga",
     pos: "Associate Member",
   },
   {
-    name: "Arghadeep Ghosh",
+    name: "Azmeera Neeraja",
     pos: "Associate Member",
   },
   {
-    name: "Namanya Pant",
+    name: "Devansh Agarwal",
     pos: "Associate Member",
   },
   {
-    name: "Niveditha K ",
+    name: "Gautam Krishna ",
     pos: "Associate Member",
   },
   {
-    name: "Rasamall Manish",
+    name: "Geetha sri",
     pos: "Associate Member",
   },
   {
-    name: "Varun Nikam",
+    name: "Hemang Kulkarni ",
     pos: "Associate Member",
   },
   {
-    name: "Vishakha Priya ",
+    name: "Kamlesh Patil",
     pos: "Associate Member",
   },
   {
-    name: "Anurag Kumar Singh",
+    name: "Koppala Gowthami",
     pos: "Associate Member",
   },
   {
-    name: "Tusharanshu Pandey ",
+    name: "Lakshya Raj",
     pos: "Associate Member",
   },
   {
-    name: "Anugrah Bagla",
+    name: "Md Iesa Ali Ahmed",
     pos: "Associate Member",
   },
   {
-    name: "Srishanth Reddy",
+    name: "Muru Kambariya",
     pos: "Associate Member",
   },
   {
-    name: "Saksham Sinha ",
+    name: "P.Rohith",
     pos: "Associate Member",
   },
   {
-    name: "Aditya Singh Tomar ",
+    name: "Priyanshu Pathak ",
     pos: "Associate Member",
   },
   {
-    name: "Ashish REDDY",
+    name: "Rishav Kumar",
     pos: "Associate Member",
   },
   {
-    name: "Sauparna Das ",
+    name: "Sahil Kumar",
     pos: "Associate Member",
   },
   {
-    name: "Dhritiraj Haldar",
+    name: "Shatakshi Shukla",
     pos: "Associate Member",
   },
   {
-    name: "raksha gupta",
+    name: "Shreyash Singh Parihar",
     pos: "Associate Member",
   },
   {
-    name: "Dipendu Das",
+    name: "Tanay Katyayan ",
     pos: "Associate Member",
   },
   {
-    name: "Krishna Dargarh",
+    name: "Thalla Hruthikesh",
     pos: "Associate Member",
   },
   {
-    name: "Madhushree Dujari",
+    name: "Ujjwal Kumar",
     pos: "Associate Member",
   },
   {
-    name: "Arnab Chakraborty",
+    name: "Vankodoth Poojitha",
     pos: "Associate Member",
   },
   {
-    name: "Azhar ul Shamus ",
+    name: "Vejendla Vaishnavi",
     pos: "Associate Member",
   },
   {
-    name: "Mayank Modi ",
+    name: "Yashaswini Poshala",
     pos: "Associate Member",
   },
-  {
-    name: "Mayank Khatri",
-    pos: "Associate Member",
-  },
-  {
-    name: "Abhinav",
-    pos: "Associate Member",
-  },
-  {
-    name: "Akshit Goyal ",
-    pos: "Associate Member",
-  },
-  {
-    name: "K.Sai Santosh Reddy",
-    pos: "Associate Member",
-  },
-  {
-    name: "Abhideep Shikhar ",
-    pos: "Associate Member",
-  },
-  {
-    name: "Akshat Tripathi",
-    pos: "Associate Member",
-  },
-  {
-    name: "Anshu Sirigineedi ",
-    pos: "Associate Member",
-  },
-  {
-    name: "Krishna Madhvan Somvanshi",
-    pos: "Associate Member",
-  },
-  {
-    name: "Sujesh Sheshadri",
-    pos: "Associate Member",
-  },
-  {
-    name: "Arnav Chauhan",
-    pos: "Associate Member",
-  },
-  {
-    name: "Pulkit Kulhari ",
-    pos: "Associate Member",
-  },
-  {
-    name: "Jay Patil ",
-    pos: "Associate Member",
-  },
-  {
-    name: "Yogesh Sharma ",
-    pos: "Associate Member",
-  },
-  {
-    name: "Akash kumar",
-    pos: "Associate Member",
-  },
-  {
-    name: "Shanit Singhal ",
-    pos: "Associate Member",
-  },
-  {
-    name: "swastik Verma",
-    pos: "Associate Member",
-  },
-  {
-    name: "Dhanraj Mahesh Patil",
-    pos: "Associate Member",
-  },
-  {
-    name: "sanyam jain",
-    pos: "Associate Member",
-  },
-  {
-    name: "varun",
-    pos: "Associate Member",
-  },
-  {
-    name: "Viraj Vekariya ",
-    pos: "Associate Member",
-  },
-  {
-    name: "Anupam kumar ravi ",
-    pos: "Associate Member",
-  },
-  {
-    name: "Athika",
-    pos: "Associate Member",
-  },
-  {
-    name: "Nikhil Mourya ",
-    pos: "Associate Member",
-  },
-  {
-    name: "Raman dubey",
-    pos: "Associate Member",
-  },
-  {
-    name: "Kunal chelak ",
-    pos: "Associate Member",
-  },
-  {
-    name: "Vishal Kumar",
-    pos: "Associate Member",
-  },
-  {
-    name: "Zalavadiya Dishil",
-    pos: "Associate Member",
-  },
-  {
-    name: "Sounak",
-    pos: "Associate Member",
-  },
-  {
-    name: "Isha Singhal",
-    pos: "Associate Member",
-  },
-  {
-    name: "Utsab Karan",
-    pos: "Associate Member",
-  },
-  {
-    name: "Prem Agarwal ",
-    pos: "Associate Member",
-  },
-  {
-    name: "Avi kumar",
-    pos: "Associate Member",
-  },
-  {
-    name: "Rishi narayan ",
-    pos: "Associate Member",
-  },
-  {
-    name: "Vatsal Gutgutia",
-    pos: "Associate Member",
-  },
+ 
+
 ];
 
 export default asmData;
