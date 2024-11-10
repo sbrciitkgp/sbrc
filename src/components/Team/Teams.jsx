@@ -6,6 +6,11 @@ import {
   designHead,
   sponsHead,
   aish,
+  gsec2024,
+  eventHead2024,
+  publicHead2024,
+  sponsHead2024,
+
 } from "./Heads";
 import studData from "./StudentMembers";
 import asmData from "./AssociateMembers";
@@ -39,10 +44,10 @@ function Teams() {
               <span style={{ fontFamily: "Raleway,sans-serif" }}>
                 EXECUTIVE TEAM{" "}
               </span>
-              2023
+              2024
             </h3>
             <div className="gSec">
-              {gensecdata.map((gsec) => {
+              {gsec2024.map((gsec) => {
                 return (
                   <div
                     key={gsec.name}
@@ -104,7 +109,7 @@ function Teams() {
               })}
             </div>
             <div className="spons">
-              {sponsHead.map((spons) => {
+              {sponsHead2024.map((spons) => {
                 return (
                   <div
                     key={spons.name}
@@ -166,7 +171,7 @@ function Teams() {
               })}
             </div>
             <div className="web">
-              {webHead.map((web) => {
+              {eventHead2024.map((web) => {
                 return (
                   <div
                     key={web.name}
@@ -228,7 +233,7 @@ function Teams() {
               })}
             </div>
             <div className="events">
-              {eventHead.map((event) => {
+              {publicHead2024.map((event) => {
                 return (
                   <div
                     key={event.name}
@@ -289,7 +294,7 @@ function Teams() {
                 );
               })}
             </div>
-            <div className="design">
+            {/* <div className="design">
               {designHead.map((design) => {
                 return (
                   <div
@@ -354,7 +359,7 @@ function Teams() {
                   </div>
                 );
               })}
-            </div>
+            </div> */}
             {/* <div className="row d-flex justify-content-center align-items-center">
             {gensecdata.map((ele, i) => {
               return (

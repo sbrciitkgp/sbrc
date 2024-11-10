@@ -7,6 +7,14 @@ import abhi from "./Heads/abhi.jpeg";
 import shrnsh from "./Heads/sharansh.jpg";
 import ajay from "./Heads/ajay.png";
 import vishal from "./Heads/Vishal Arya.jpeg";
+import amogh  from "./Heads/image.png";
+import nikhil from "./Heads/Nikhil.jpg";
+import praneeth from "./Heads/Praneeth.jpg";
+import mohit from "./Heads/mohit.jpg";
+import jatin from "./Heads/Jatin.jpg";
+import anushika from "./Heads/Anushika.jpg";
+import anvesh from "./Heads/Anvesh.jpg";
+
 
 const gensecdata = [
   {
@@ -108,4 +116,89 @@ const designHead = [
     mail: "aryav7196@gmail.com",
   },
 ];
-export { gensecdata, webHead, designHead, eventHead, sponsHead, aish };
+
+const gsec2024 = [
+  {
+    img: praneeth,
+    name: "Sudhagani Praneeth Kumar",
+    pos: "General Secretary",
+    fb: "https://www.facebook.com/profile.php?id=100090902711207",
+    insta: "https://www.instagram.com/w3.aish.in/",
+    linkedin: "https://www.linkedin.com/in/aishwary-patel-976298226",
+    contact: "7416449233",
+    mail: "praneeth.sudhagani.barc.iitkgp@gmail.com",
+  },
+  {
+    img: anushika,
+    name: "Anushika Srivastava", 
+    pos: "General Secretary",
+    fb: "https://www.facebook.com/anushika.shrivastava.102",
+    linkedin: "https://www.linkedin.com/in/bhumi-tayal-725913226/",
+    contact: "7999850015",
+    mail: "anushikashrivastava2004@gmail.com",
+  },
+]
+const publicHead2024 =[
+  {
+    fb:"https://www.facebook.com/search/top?q=amogh%20ubhalkar",
+    name:"Amogh Ubalkar",
+    pos:"Public Relations coordinator",
+    linkedin:"https://www.linkedin.com/in/amogh-ubhalkar-270b81257/",
+    img:amogh,
+    contact:"9891597226",
+    mail:"ubhalkar.amogh@gmail.com",
+  },
+  {
+    name:"Jatain Kumar ",
+    fb:"https://www.facebook.com/profile.php?id=100087759331738",
+    linkedin:"https://www.linkedin.com/in/jatainkumar/",
+    img:jatin,
+    pos:"Public Relations coordinator",
+    contact:"6006782092",
+    mail:"jatainkumar7@gmail.com",
+  },
+  {
+    name:"Anvesh Rajguru",
+    fb:"https://www.facebook.com/anvesh.rajguru.9",
+    linkedin:"https://www.linkedin.com/in/anvesh-rajguru-b07843259/",
+    img:anvesh,
+    pos:"Public Relations coordinator",
+    contact:"7775086303",
+    mail:"anveshrajguru21@gmail.com"
+  }
+]
+const eventHead2024 = [
+ 
+  {
+    name:"Mohit Pant",
+    fb:"https://www.facebook.com/profile.php?id=100085542944939",
+    linkedin:"https://www.linkedin.com/in/mohit-pant-46790624b/",
+    img:mohit,
+    pos:"Events and Publicity Coordinator",
+    contact:"9999999999",
+    mail:"mohi13245@gmail.com"
+  },
+     
+]
+const sponsHead2024 = [
+  {
+    name:"Akshat Sharma",
+    fb:"https://www.facebook.com/profile.php?id=100087632920116",
+    linkedin:"https://www.linkedin.com/in/akshat-sharma-2973b0273/",
+    img:"https://scontent-bom1-2.xx.fbcdn.net/v/t39.30808-6/402337880_316250644639364_2579288725303007084_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=x_ftxDntxBcQ7kNvgEqOXfH&_nc_zt=23&_nc_ht=scontent-bom1-2.xx&_nc_gid=AmG0Q5rULyYqGT2RrQuqW8v&oh=00_AYC9lgyKp_OZPmGC46B7Gmmiu_Iw1lqqY1JSD9RI3atIgg&oe=6736984B",
+    pos:"Sponsorship and Corporate Relations Coordinator",
+    contact:"9926159072",
+    mail:"sharma.akshat0906@gmail.com"
+  },
+  {
+    name:"Nikhil Yadav",
+    fb:"https://www.facebook.com/profile.php?id=100086786409496",
+    linkedin:"https://www.linkedin.com/in/nikhil-yadav181/",
+    img:nikhil,
+    pos:"Sponsorship and Corporate Relations Coordinator",
+    contact:"9616650639",
+    mail:"nikhil181yadav@gmail.com"
+  },
+
+]
+export { gensecdata, webHead, designHead, eventHead, sponsHead, aish ,gsec2024,eventHead2024,publicHead2024,sponsHead2024 };
