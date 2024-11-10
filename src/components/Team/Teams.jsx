@@ -39,7 +39,7 @@ function Teams() {
               <span style={{ fontFamily: "Raleway,sans-serif" }}>
                 EXECUTIVE TEAM{" "}
               </span>
-              2023
+              2024
             </h3>
             <div className="gSec">
               {gensecdata.map((gsec) => {
