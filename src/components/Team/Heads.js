@@ -125,7 +125,7 @@ const gsec2024 = [
     fb: "https://www.facebook.com/profile.php?id=100090902711207",
     insta: "https://www.instagram.com/w3.aish.in/",
     linkedin: "https://www.linkedin.com/in/praneeth-kumar-sudhagani/",
-    contact: "7416449233",
+    contact: "+91 7416449233",
     mail: "praneeth.sudhagani.barc.iitkgp@gmail.com",
   },
   {
@@ -134,18 +134,18 @@ const gsec2024 = [
     pos: "General Secretary",
     fb: "https://www.facebook.com/anushika.shrivastava.102",
     linkedin: "https://www.linkedin.com/in/anushika06/",
-    contact: "7999850015",
+    contact: "+91 7999850015",
     mail: "anushikashrivastava2004@gmail.com",
   },
 ]
 const publicHead2024 =[
   {
     fb:"https://www.facebook.com/amogh.ubhalkar/",
-    name:"Amogh Ubalkar",
+    name:"Amogh Ubhalkar",
     pos:"Public Relations coordinator",
     linkedin:"https://www.linkedin.com/in/amogh-ubhalkar-270b81257/",
     img:amogh,
-    contact:"9891597226",
+    contact:"+91 8793615083",
     mail:"ubhalkar.amogh@gmail.com",
   },
   {
@@ -154,7 +154,7 @@ const publicHead2024 =[
     linkedin:"https://www.linkedin.com/in/jatainkumar/",
     img:jatin,
     pos:"Public Relations coordinator",
-    contact:"6006782092",
+    contact:"+91 6006782092",
     mail:"jatainkumar7@gmail.com",
   },
   {
@@ -163,7 +163,7 @@ const publicHead2024 =[
     linkedin:"https://www.linkedin.com/in/anvesh-rajguru-b07843259/",
     img:anvesh,
     pos:"Public Relations coordinator",
-    contact:"7775086303",
+    contact:"+91 7775086303",
     mail:"anveshrajguru21@gmail.com"
   }
 ]
@@ -175,7 +175,7 @@ const eventHead2024 = [
     linkedin:"https://www.linkedin.com/in/mohit-pant-46790624b/",
     img:mohit,
     pos:"Events and Publicity Coordinator",
-    contact:"9999999999",
+    contact:"+91 8168341986",
     mail:"mohi13245@gmail.com"
   },
      
@@ -187,7 +187,7 @@ const sponsHead2024 = [
     linkedin:"https://www.linkedin.com/in/akshat-sharma-2973b0273/",
     img:"https://scontent-bom1-2.xx.fbcdn.net/v/t39.30808-6/402337880_316250644639364_2579288725303007084_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=x_ftxDntxBcQ7kNvgEqOXfH&_nc_zt=23&_nc_ht=scontent-bom1-2.xx&_nc_gid=AmG0Q5rULyYqGT2RrQuqW8v&oh=00_AYC9lgyKp_OZPmGC46B7Gmmiu_Iw1lqqY1JSD9RI3atIgg&oe=6736984B",
     pos:"Sponsorship and Corporate Relations Coordinator",
-    contact:"9926159072",
+    contact:"+91 9926159072",
     mail:"sharma.akshat0906@gmail.com"
   },
   {
@@ -196,7 +196,7 @@ const sponsHead2024 = [
     linkedin:"https://www.linkedin.com/in/nikhil-yadav181/",
     img:nikhil,
     pos:"Sponsorship and Corporate Relations Coordinator",
-    contact:"9616650639",
+    contact:"+91 9616650639",
     mail:"nikhil181yadav@gmail.com"
   },
 
