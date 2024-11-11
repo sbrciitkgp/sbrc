@@ -124,7 +124,7 @@ const gsec2024 = [
     pos: "General Secretary",
     fb: "https://www.facebook.com/profile.php?id=100090902711207",
     insta: "https://www.instagram.com/w3.aish.in/",
-    linkedin: "https://www.linkedin.com/in/aishwary-patel-976298226",
+    linkedin: "https://www.linkedin.com/in/praneeth-kumar-sudhagani/",
     contact: "7416449233",
     mail: "praneeth.sudhagani.barc.iitkgp@gmail.com",
   },
@@ -133,14 +133,14 @@ const gsec2024 = [
     name: "Anushika Srivastava", 
     pos: "General Secretary",
     fb: "https://www.facebook.com/anushika.shrivastava.102",
-    linkedin: "https://www.linkedin.com/in/bhumi-tayal-725913226/",
+    linkedin: "https://www.linkedin.com/in/anushika06/",
     contact: "7999850015",
     mail: "anushikashrivastava2004@gmail.com",
   },
 ]
 const publicHead2024 =[
   {
-    fb:"https://www.facebook.com/search/top?q=amogh%20ubhalkar",
+    fb:"https://www.facebook.com/amogh.ubhalkar/",
     name:"Amogh Ubalkar",
     pos:"Public Relations coordinator",
     linkedin:"https://www.linkedin.com/in/amogh-ubhalkar-270b81257/",
@@ -150,7 +150,7 @@ const publicHead2024 =[
   },
   {
     name:"Jatain Kumar ",
-    fb:"https://www.facebook.com/profile.php?id=100087759331738",
+    fb:"https://www.facebook.com/jatain.kumar.17/",
     linkedin:"https://www.linkedin.com/in/jatainkumar/",
     img:jatin,
     pos:"Public Relations coordinator",
@@ -159,7 +159,7 @@ const publicHead2024 =[
   },
   {
     name:"Anvesh Rajguru",
-    fb:"https://www.facebook.com/anvesh.rajguru.9",
+    fb:"https://www.facebook.com/profile.php?id=100087759331738",
     linkedin:"https://www.linkedin.com/in/anvesh-rajguru-b07843259/",
     img:anvesh,
     pos:"Public Relations coordinator",
