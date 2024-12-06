@@ -27,13 +27,13 @@ function AboutUs() {
         }}>
             <div className="about-us">
               <motion.h1>
-                ABOUT
+                ABOUT US
               </motion.h1>
             </div>
 
             <div className=" about-us-text">
               <motion.p>
-                Students' Branding and Relations cell is a student body under the aegis of
+                Students' Branding and Relations Cell is a student body under the aegis of
                 the Office of Alumni Affairs & International Relations. It aims towards
                 positioning IIT Kharagpur as a global leader in the field of
                 science and technology.

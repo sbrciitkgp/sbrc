@@ -59,16 +59,6 @@ function ContactInfo() {
           </button>
         </div>
         <p className="title-info">Call Us</p>
-        <p className="text">Praneeth Kumar</p>
-        <div className="information">
-          <p>
-            <a style={{ color: "inherit" }} href="tel:+91 7416449233">
-              +91 7416449233
-            </a>
-            <br />
-            praneeth.sudhagani.barc.iitkgp@gmail.com
-          </p>
-        </div>
         <p className="text">Anushika Srivastava</p>
         <div className="information">
           <p>
@@ -79,6 +69,17 @@ function ContactInfo() {
             anushikashrivastava2004@gmail.com
           </p>
         </div>
+        <p className="text">Praneeth Kumar</p>
+        <div className="information">
+          <p>
+            <a style={{ color: "inherit" }} href="tel:+91 7416449233">
+              +91 7416449233
+            </a>
+            <br />
+            praneeth.sudhagani.barc.iitkgp@gmail.com
+          </p>
+        </div>
+        
       </div>
 
       <div className="social-media">
@@ -92,7 +93,7 @@ function ContactInfo() {
             }}
             target="_blank"
             rel="noreferrer"
-            href="https://www.instagram.com/barc.iitkgp/"
+            href="https://www.instagram.com/sbrc.iitkgp/"
           >
             <motion.i
               whileHover={{ scale: 1.3 }}
@@ -108,7 +109,7 @@ function ContactInfo() {
             }}
             target="_blank"
             rel="noreferrer"
-            href="https://www.facebook.com/barciitkgp"
+            href="https://www.facebook.com/sbrciitkgp"
           >
             <motion.i
               whileHover={{ scale: 1.3 }}
@@ -140,7 +141,7 @@ function ContactInfo() {
             }}
             target="_blank"
             rel="noreferrer"
-            href="https://www.youtube.com/@barciitkgp"
+            href="https://www.youtube.com/@sbrciitkgp"
           >
             <motion.i
               whileHover={{ scale: 1.3 }}
