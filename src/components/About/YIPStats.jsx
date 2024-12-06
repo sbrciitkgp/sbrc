@@ -33,7 +33,7 @@ function YIPstats() {
           transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s"
         }}
      >
-      <h3 className="yipstats-heading">Young Innovators' Program</h3>
+      <h3 className="yipstats-heading">Young Innovators Program</h3>
       </motion.div>
       <motion.div className="yipcard"
        ref={ref2}

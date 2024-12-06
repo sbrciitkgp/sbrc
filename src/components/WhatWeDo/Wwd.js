@@ -56,11 +56,11 @@ function WWD() {
                 {" "}
                 <img src={img2} alt="img1" style={{ objectFit: "contain" }} />
               </div>
-              <div className="text">Young Innovators' Program</div>
+              <div className="text">Young Innovators Program</div>
             </div>
             <div class="back text-center">
               <p>
-                Young Innovator's Program is a platform to foster young minds
+                Young Innovators Program is a platform to foster young minds
                 with scientific enthusiasm and a credo to solve the problems
                 facing the globe. In a two day visit to IIT Kharagpur, the
                 students will get a chance to explore the scientific environment

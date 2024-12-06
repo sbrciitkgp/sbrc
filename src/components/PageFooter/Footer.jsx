@@ -128,7 +128,7 @@ function Footer() {
               <ul>
                 <li>
                   <a href="https://yip.iitkgp.ac.in/">
-                    Young Innovators' Program
+                    Young Innovators Program
                   </a>
                 </li>
                 <li>
