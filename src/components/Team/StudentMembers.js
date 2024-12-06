@@ -21,11 +21,11 @@ import Dhanraj from "./SM/Dhanraj.jpg";
 
 
 const studData = [
-  {
-    name: "Abhinav",
-    img: Abhinav,
-    pos: "Student Member",
-  },
+  // {
+  //   name: "Abhinav",
+  //   img: Abhinav,
+  //   pos: "Student Member",
+  // },
   {
     name: "Anamika",
     img: Anamika,

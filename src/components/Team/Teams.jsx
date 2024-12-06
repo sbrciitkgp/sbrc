@@ -465,7 +465,7 @@ function Teams() {
                 );
               })}
             </div>
-            <h3
+            {/* <h3
               className="team-title"
               style={{
                 color: "#08707f",
@@ -474,7 +474,7 @@ function Teams() {
                 marginTop: "5rem",
               }}
             >
-              ASSOCIATE MEMBERS
+            /*  ASSOCIATE MEMBERS
             </h3>
             <div className="row">
               {asmData.map((ele, i) => {
@@ -501,7 +501,7 @@ function Teams() {
                   </>
                 );
               })}
-            </div>
+            </div>  */}
           </div>
         </div>
       </section>
