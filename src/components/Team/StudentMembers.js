@@ -1,7 +1,7 @@
 import dummy from "./SM/dummy.jpg";
 import Anamika from "./SM/Anamika.jpg";
 import Animesh from "./SM/Animesh.jpg";
-import Archisa from "./SM/Archisa.jpg";
+import Archisha from "./SM/Archisha.jpg";
 import Dhruv from "./SM/Dhruv.jpg";
 import Isha from "./SM/Isha.jpg";
 import Namanya from "./SM/Namanya.jpg";
@@ -11,12 +11,19 @@ import Shivaji from "./SM/Shivaji.jpg";
 import Vasanth from "./SM/Vasanth.jpg";
 import Vishakha from "./SM/Vishakha.jpg";
 import Vishal from "./SM/Vishal.jpg";
+import Abhinav from "./SM/Abhinav.jpg";
+import Neeraj from "./SM/Neeraj.jpg";
+import Esam from "./SM/Esam.jpg";
+import Himanshu from "./SM/Himanshu.jpg";
+import Shashi from "./SM/Shashi.jpg";
+import Dishil from "./SM/Dishil.jpg";
+import Dhanraj from "./SM/Dhanraj.jpg";
 
 
 const studData = [
   {
     name: "Abhinav",
-    img: dummy,
+    img: Abhinav,
     pos: "Student Member",
   },
   {
@@ -31,12 +38,12 @@ const studData = [
   },
   {
     name: "Annangi Neeraj Kumar",
-    img: dummy,
+    img: Neeraj,
     pos: "Student Member",
   },
   {
-    name: "Archisa Paul",
-    img: Archisa,
+    name: "Archisha Paul",
+    img: Archisha,
     pos: "Student Member",
   },
   {
@@ -46,7 +53,7 @@ const studData = [
   },
   {
     name: "Dhanraj Patil",
-    img: dummy,
+    img: Dhanraj,
     pos: "Student Member",
   },
   {
@@ -61,12 +68,12 @@ const studData = [
   },
   {
     name: "Esam Ashok",
-    img: dummy,
+    img: Esam,
     pos: "Student Member",
   },
   {
     name: "Himanshu Raj",
-    img: dummy,
+    img: Himanshu,
     pos: "Student Member",
   },
   {
@@ -96,14 +103,14 @@ const studData = [
   },
   {
     name: "Shashi Vallabh Makkapati",
-    img: dummy,
+    img: Shashi,
     pos: "Student Member",
   },
-  {
-    name: "Siddhi Datri ",
-    img: dummy,
-    pos: "Student Member",
-  },
+  // {
+  //   name: "Siddhi Datri ",
+  //   img: dummy,
+  //   pos: "Student Member",
+  // },
   {
     name: "Vishakha Priya",
     img: Vishakha,
@@ -116,7 +123,7 @@ const studData = [
   },
   {
     name: "Zalavadiya Dishil",
-    img: dummy,
+    img: Dishil,
     pos: "Student Member",
   },
 
