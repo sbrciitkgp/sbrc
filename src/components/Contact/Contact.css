@@ -6,7 +6,7 @@
   width: 100vw;
   min-height: 100vh;
   padding: 4.4rem;
-  background-image: url(waves7.svg);
+  /* background-image: url(waves7.svg); */
   background-position: center;
   background-size: cover;
   background-color: lightblue;
@@ -260,7 +260,7 @@ border: 0px solid rgba(173, 216, 230, 0.3);
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   .contact-page {
     padding: 1.5rem;
   }
@@ -277,7 +277,7 @@ border: 0px solid rgba(173, 216, 230, 0.3);
   .text,
   .information,
   .social-media p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .social-icons a {
@@ -292,6 +292,9 @@ border: 0px solid rgba(173, 216, 230, 0.3);
 
   .btn {
     padding: 0.45rem 1.2rem;
+  }
+  .contact-info .title-info {
+    font-size: 1.5rem;
   }
 }
 
@@ -318,5 +321,15 @@ iframe {
 @media (max-width: 480px) {
   iframe {
     height: 500px; 
+  }
+}
+
+@media (max-width: 350px) {
+  .information p {
+    font-size: 3vw; 
+    text-wrap: wrap !important;
+  }
+  .title-info{
+    font-size: 6vw !important;
   }
 }

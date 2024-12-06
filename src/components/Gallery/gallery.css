@@ -4,8 +4,8 @@
     padding:10px 0 0 0;
     width:100vw;
    padding-bottom: 0;
-   background-color: #08707f;
-   background-image: url("./SVG/wave6.svg") ;
+   /* background-color: #08707f; */
+   /* background-image: url("./SVG/wave6.svg") ; */
    background-position: center  ;
    background-size: cover;
 }
@@ -27,3 +27,19 @@
   .image-gallery-image {
     scale:0.85;
   }
+
+@media screen and (max-width: 600px) {
+    .gallery-title {
+        font-size: 30px;
+        padding: 10px ;
+    }    
+    .image-gallery-bullets{
+        transform: translateY(25px);
+    }
+    .image-gallery-play-button, .image-gallery-fullscreen-button  {
+        transform: translateY(20px);
+    }
+    .gallery-slides{
+        margin-top: 0 !important;
+    }
+}

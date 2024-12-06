@@ -1,6 +1,6 @@
   #about-page{
     background-color:#08707f;
-    background-image: url("../wave6.svg");
+    /* background-image: url("../wave6.svg"); */
     background-position: center;
     background-size: cover;
   }
@@ -39,6 +39,7 @@
       font-family: Raleway,sans-serif;
       color:white;
       font-weight: 500;
+      text-align: justify;
     }
   
     .about-us-container{
