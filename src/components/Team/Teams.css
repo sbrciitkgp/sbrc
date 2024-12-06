@@ -87,6 +87,11 @@
     background: #C6CCE6;
     border-radius: 0 0 20px 20px;
 }
+
+.our-team .team-content span {
+    text-wrap: wrap;
+}
+
 .our-team .team-title{
     font-family: 'Raleway',sans-serif;
 
@@ -137,7 +142,8 @@
     display: inline-block;
     font-size: 19px;
     color:  #f76c5e;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
+    text-wrap: wrap !important;
 }
 .our-team .post:before{
     content: "";
@@ -290,53 +296,59 @@ ul.social li a {
 }
 .spons{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
 }
 .events{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 580px){
     
-.gSec{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.design{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+    .gSec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .design{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
 
-}
-.web{
-    width:100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.spons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    }
+    .web{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .spons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
-}
-.events{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    }
+    .events{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
 
-}
-.team_img>img{
-    width:280px !important;
-}
+    }
+    .team_img>img{
+        width:280px !important;
+    }
+    .post{
+        width: 280px !important;
+        padding: 5px;
+        text-wrap: wrap;
+    }
 }

@@ -26,7 +26,7 @@ function Teams() {
           style={{ width: "0", height: "0", opacity: "0" }}
         />
         <h1
-          className="team-title text-center"
+          className="team-title text-center mb-0 mt-2"
           style={{
             color: "#08707f",
             fontSize: "3rem",
@@ -38,10 +38,10 @@ function Teams() {
         <div className="demo">
           <div className="container text-center">
             <h3
-              className=" team-title senior-title"
+              className=" team-title senior-title pt-0 mt-0"
               style={{ color: "#08707f" }}
             >
-              <span style={{ fontFamily: "Raleway,sans-serif" }}>
+              <span style={{ fontFamily: "Raleway,sans-serif" }} >
                 EXECUTIVE TEAM{" "}
               </span>
               2024
@@ -435,7 +435,7 @@ function Teams() {
                 return (
                   <>
                     <div
-                      className="studmemb row col-lg-5 col-md-7 my-4 col-sm-5 d-flex align-items-center card_ mx-auto"
+                      className="studmemb row col-lg-5 col-md-7 my-4 col-sm-11 col-11 d-flex align-items-center card_ mx-auto"
                       style={{ borderRadius: "20px" }}
                     >
                       <motion.div
@@ -483,7 +483,7 @@ function Teams() {
                 return (
                   <>
                     <div
-                      className="studmemb row col-lg-5 col-md-7 my-4 col-sm-5 d-flex align-items-center card_ mx-auto"
+                      className="studmemb row col-lg-5 col-md-7 my-4 col-sm-5 col-11 d-flex align-items-center card_ mx-auto"
                       style={{ borderRadius: "20px" }}
                     >
                       <div className="card-body col-md-8 col-sm-8">
