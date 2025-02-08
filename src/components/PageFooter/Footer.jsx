@@ -23,20 +23,21 @@ function Footer() {
               </a>
               <p>
                 Students' Branding and Relations Cell is a student body under
-                the aegis of the Office of Alumni Affairs & International Relations.
+                the aegis of the Office of Alumni Affairs & International
+                Relations.
               </p>
               <div class="social-links d-flex mt-4">
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.instagram.com/barc.iitkgp/"
+                  href="https://www.instagram.com/sbrc.iitkgp/"
                 >
                   <i className="fa fa-instagram"></i>
                 </a>
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.facebook.com/barciitkgp"
+                  href="https://www.facebook.com/sbrciitkgp"
                 >
                   <i className="fa fa-facebook-square"></i>
                 </a>
@@ -50,7 +51,7 @@ function Footer() {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.youtube.com/@barciitkgp"
+                  href="https://www.youtube.com/@sbrciitkgp"
                 >
                   <i className="fa fa-youtube-square"></i>
                 </a>

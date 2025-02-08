@@ -19,7 +19,6 @@ import Shashi from "./SM/Shashi.jpg";
 import Dishil from "./SM/Dishil.jpg";
 import Dhanraj from "./SM/Dhanraj.jpg";
 
-
 const studData = [
   // {
   //   name: "Abhinav",
@@ -96,11 +95,11 @@ const studData = [
     img: Saksham,
     pos: "Student Member",
   },
-  {
-    name: "Samridhi Rastogi",
-    img: dummy,
-    pos: "Student Member",
-  },
+  // {
+  //   name: "Samridhi Rastogi",
+  //   img: dummy,
+  //   pos: "Student Member",
+  // },
   {
     name: "Shashi Vallabh Makkapati",
     img: Shashi,
@@ -126,8 +125,6 @@ const studData = [
     img: Dishil,
     pos: "Student Member",
   },
-
- 
 ];
 
 export default studData;
