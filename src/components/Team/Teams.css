@@ -196,10 +196,19 @@
     }
     
 }
+#dropdownMenuButton{
+    border: none;
+    background-color: transparent;
+}
+#dropdownMenuButton::after{
+    display: none !important;
+}
 
-
-
-
+/* .year-toggle{
+    height: 0;
+    overflow: hidden;
+    animation: height;
+} */
 /* 
 .box {
 	border-radius: 10px;

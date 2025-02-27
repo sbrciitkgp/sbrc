@@ -99,6 +99,17 @@ const sponsHead = [
 const designHead = [
   {
     // src: require("assets/img/denys.jpg"),
+    name: "Ajay Biswas",
+    pos: "Web Design Coordinator",
+    img: ajay,
+    fb: "https://www.facebook.com/profile.php?id=100074748354912",
+    insta: "https://www.instagram.com/blue_sq4/",
+    linkedin: "https://www.linkedin.com/in/ajay-biswas-8b0832237/",
+    mail: "ajaybiswas44442019@gmail.com",
+    contact: "7008454709",
+  },
+  {
+    // src: require("assets/img/denys.jpg"),
     name: "Abhishek Tiwari",
     img: abhi,
     pos: "Graphics Design Coordinator",
@@ -201,6 +212,15 @@ const sponsHead2024 = [
     pos:"Sponsorship and Corporate Relations Coordinator",
     contact:"+91 9616650639",
     mail:"nikhil181yadav@gmail.com"
+  },
+  {
+    name:"Mohit Pant",
+    fb:"https://www.facebook.com/profile.php?id=100085542944939",
+    linkedin:"https://www.linkedin.com/in/mohit-pant-46790624b/",
+    img:mohit,
+    pos:"Events and Publicity Coordinator",
+    contact:"+91 8168341986",
+    mail:"mohi13245@gmail.com"
   },
 
 ]
