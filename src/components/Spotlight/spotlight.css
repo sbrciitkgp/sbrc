@@ -34,7 +34,7 @@ iframe {
 }
 
 .card-text {
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: Poppins, sans-serif !important;
 }
 
 .yt-link i {
@@ -109,10 +109,12 @@ iframe {
 }
 
 .modal-content {
-  background-color: rgb(1, 117, 109) !important;
+  /* background-color: #009990 !important; */
+  padding: 0 !important;
 }
 .modal-header {
-  background-color: #0955b3;
+  /* background-color: #003092; */
+  background-color: #009990;
 }
 .about-container .card-text {
   display: flex;
@@ -146,6 +148,6 @@ iframe {
 
 @media (width >= 1200px) {
   #individual .card {
-    height: auto;
+    height: 450px;
   }
 }
