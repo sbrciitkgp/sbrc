@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { motion } from "framer-motion";
 import Img from "../../assets/images/sbrclogo.png";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import "animate.css";
 function Navbar() {
@@ -22,21 +22,27 @@ function Navbar() {
   const navLi = document.querySelectorAll(".nav-link");
 
   window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
+    if (
+      location.pathname === "/home-page" ||
+      location.pathname === "/" ||
+      location.pathname === "/home-page#home-page"
+    ) {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
 
-      if (window.scrollY >= sectionTop - sectionHeight / 3) {
-        current = section.getAttribute("id");
-      }
-    });
-    navLi.forEach((a) => {
-      a.classList.remove("active");
-      if (a.classList.contains(current)) {
-        a.classList.add("active");
-      }
-    });
+        if (window.scrollY >= sectionTop - sectionHeight / 3) {
+          current = section.getAttribute("id");
+        }
+      });
+      navLi.forEach((a) => {
+        a.classList.remove("active");
+        if (a.classList.contains(current)) {
+          a.classList.add("active");
+        }
+      });
+    }
   });
 
   const [Nav, switchNav] = useState("navbar");
@@ -63,6 +69,7 @@ function Navbar() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   return (
     <motion.div>
@@ -82,11 +89,21 @@ function Navbar() {
           <nav id="navbar" className={Nav}>
             <div id="scrollspy1">
               <ul>
-                <li onClick={closeNav}>
+                <li
+                  onClick={() => {
+                    closeNav();
+                    scrollToTop();
+                  }}
+                >
                   <HashLink
-                    className="nav-link scrollto active home-page"
+                    className={`nav-link scrollto home-page ${
+                      location.pathname ===
+                      ("/home-page" || "/" || "/home-page#home-page")
+                        ? "active"
+                        : ""
+                    }`}
                     style={{ width: "auto" }}
-                    to={"/#home-page"}
+                    to={"/home-page"}
                   >
                     Home
                   </HashLink>
@@ -94,16 +111,17 @@ function Navbar() {
                 <li onClick={closeNav}>
                   <HashLink
                     className="nav-link scrollto about-page"
-                    to={"/#about-page"}
+                    to={"/home-page#about-page"}
                   >
                     About
                   </HashLink>
                 </li>
-                <li onClick={closeNav}>
+                <li>
                   {isHomePage ? (
                     <HashLink
                       className="nav-link scrollto what-we-do"
-                      to="/#what-we-do"
+                      to="/home-page#what-we-do"
+                      onClick={closeNav}
                     >
                       What We Do
                     </HashLink>
@@ -115,12 +133,23 @@ function Navbar() {
                         type="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
+                        onMouseEnter={() => setDropdownOpen(true)}
                       >
                         What We Do
                       </a>
-                      <div className="dropdown-menu">
-                        <div className=" ">
-                          <li>
+                      <div
+                        className={`dropdown-menu ${
+                          isDropdownOpen ? "show" : ""
+                        } mx-2`}
+                      >
+                        <div
+                          className=" "
+                          onMouseEnter={() => setDropdownOpen(true)}
+                          onMouseLeave={() => {
+                            setDropdownOpen(false);
+                          }}
+                        >
+                          <li onClick={() => setDropdownOpen(false)}>
                             <Link
                               to="https://yip.iitkgp.ac.in/"
                               target="_blank"
@@ -128,34 +157,52 @@ function Navbar() {
                               YIP
                             </Link>
                           </li>
-                          <li>
-                            <Link to="/spotlight">Spotlight</Link>
+                          <li onClick={() => setDropdownOpen(false)}>
+                            <Link
+                              to="/spotlight"
+                              className="scrollto spotlight"
+                            >
+                              Spotlight
+                            </Link>
                           </li>
                           <li>
                             <Link to="">UGAD</Link>
                           </li>
-                          <li>
-                            <Link to="">KGP Directory</Link>
+                          <li onClick={() => setDropdownOpen(false)}>
+                            <Link
+                              to="https://drive.google.com/file/d/1xLpHLJshQ_OekVm90RRvzW69sad47gNb/view"
+                              target="_blank"
+                            >
+                              KGP Directory
+                            </Link>
                           </li>
                         </div>
                       </div>
                     </li>
                   )}
                 </li>
-                {/* <li onClick={closeNav}>
-                  <Link className="nav-link " to="/spotlight">
-                    Spotlight
-                  </Link>
-                </li> */}
                 <li onClick={closeNav}>
-                  <a className="nav-link " href="/team">
-                    Team
-                  </a>
+                  <NavLink
+                    className="nav-link"
+                    to="/spotlight"
+                    activeClassName="active"
+                  >
+                    Spotlight{" "}
+                  </NavLink>
+                </li>
+                <li onClick={closeNav}>
+                  <NavLink
+                    className="nav-link"
+                    to="/team"
+                    activeClassName="active"
+                  >
+                    Team{" "}
+                  </NavLink>
                 </li>
                 <li onClick={closeNav}>
                   <HashLink
                     className="nav-link scrollto gallery"
-                    to="/#gallery"
+                    to="/home-page#gallery"
                   >
                     Gallery
                   </HashLink>
@@ -163,7 +210,7 @@ function Navbar() {
                 <li onClick={closeNav}>
                   <HashLink
                     className="nav-link scrollto contact-us-page"
-                    to="/#contact-us-page"
+                    to="/home-page#contact-us-page"
                   >
                     Contact Us
                   </HashLink>

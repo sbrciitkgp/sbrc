@@ -275,3 +275,13 @@ h6 {
 .dropdown-toggle::after {
   display: none;
 }
+
+/* Show dropdown menu on hover */
+.dropdown-toggle:hover .dropdown-menu {
+  display: block !important;
+}
+
+/* Prevent flickering when moving between button and menu */
+.dropdown-menu {
+  margin-top: 0;
+}

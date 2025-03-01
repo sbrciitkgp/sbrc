@@ -1,5 +1,5 @@
 import React from "react";
-import { HashLink } from "react-router-hash-link";
+import { HashLink, Link } from "react-router-hash-link";
 
 import "./Footer.css";
 import "./scrollbar.css"; //styling the scrollar
@@ -96,7 +96,7 @@ function Footer() {
                   <a
                     onClick={scrollToTop}
                     className="nav-link scrollto team"
-                    href="#/team"
+                    href="/team"
                   >
                     Team
                   </a>
@@ -129,7 +129,7 @@ function Footer() {
               <ul>
                 <li>
                   <a href="https://yip.iitkgp.ac.in/">
-                    Young Innovators Program
+                    Young Innovators' Program
                   </a>
                 </li>
                 <li>
@@ -139,7 +139,12 @@ function Footer() {
                   <a href="/spotlight">Spotlight</a>
                 </li>
                 <li>
-                  <a href="#">KGP Directory</a>
+                  <a
+                    href="https://drive.google.com/file/d/1xLpHLJshQ_OekVm90RRvzW69sad47gNb/view"
+                    target="_balnk"
+                  >
+                    KGP Directory
+                  </a>
                 </li>
               </ul>
             </div>
