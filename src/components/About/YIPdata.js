@@ -1,7 +1,20 @@
 const YIP = [
   {
+    id: "6",
+    year: "2024",
+    yearS: "25",
+    icon: "tim-icons icon-bulb-63 text-success pr-1",
+    school: "800",
+    student: "1400",
+    teams: "32",
+    idFirst: "2024-first",
+    idSecond: "2024-second",
+    idThird: "2024-third"
+  },
+  {
     id: "5",
     year: "2023",
+    yearS: "24",
     icon: "tim-icons icon-bulb-63 text-success pr-1",
     school: "700",
     student: "1400",
@@ -13,6 +26,7 @@ const YIP = [
   {
     id: "4",
     year: "2022",
+    yearS: "23",
     icon: "tim-icons icon-bulb-63 text-success pr-1",
     school: "650",
     student: "1400",
@@ -24,6 +38,7 @@ const YIP = [
     {
       id: "1",
       year: "2019",
+      yearS: "20",
       icon: "tim-icons icon-spaceship text-success pr-1",
       school: "1200",
       student: "2400",
@@ -35,6 +50,7 @@ const YIP = [
     {
       id: "2",
       year: "2018",
+      yearS: "19",
       icon: "tim-icons icon-shape-star text-success pr-1",
       school: "1000",
       student: "1000",
@@ -46,6 +62,7 @@ const YIP = [
     {
       id: "3",
       year: "2017",
+      yearS: "18",
       icon: "tim-icons icon-bulb-63 text-success pr-1",
       school: "200",
       student: "400",

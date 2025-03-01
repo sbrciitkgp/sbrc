@@ -8,16 +8,10 @@ import img4 from "./thumbnails/kgpdirectory.png";
 
 const items = [
   {
-    title: "UG Achievers Directory",
-    img: img1,
-    description:
-      "The Students' Branding and Relations Cell's UG Achievers Directory (UGAD) initiative aims to highlight IIT Kharagpur students who have accomplished notable achievements during a particular academic year. The official IIT Kharagpur website features UGAD.",
-  },
-  {
-    title: "Young Innovators Program",
+    title: "Young Innovators' Program",
     img: img2,
     description:
-      "Young Innovators Program is a platform to foster young minds with scientific enthusiasm and a credo to solve the problems facing the globe. In a two-day visit to IIT Kharagpur, students will get a chance to explore the scientific environment and present their projects in front of distinguished researchers and guests.",
+      "Young Innovators' Program is a platform to foster young minds with scientific enthusiasm and a credo to solve the problems facing the globe. In a two-day visit to IIT Kharagpur, students will get a chance to explore the scientific environment and present their projects in front of distinguished researchers and guests. YIP not only promotes scientific thinking but also nurtures innovation and problem-solving skills, aligning to the national vision to become Vishwaguru.",
     link: "https://yip.iitkgp.ac.in/",
     linkText: "Visit YIP",
   },
@@ -25,9 +19,15 @@ const items = [
     title: "Spotlight",
     img: img3,
     description:
-      "The Students' Branding and Relations Cell has launched a ‘Spotlight’ initiative for IIT Kharagpur students, allowing them to highlight their accomplishments in fields such as sports, academics, technology, and public welfare.",
-      link: "https://www.youtube.com/@sbrciitkgp",
+      "The Students' Branding and Relations Cell has launched a ‘Spotlight’ initiative for IIT Kharagpur students, allowing them to highlight their accomplishments in fields such as sports, academics, technology, and welfare.",
+      link: "/spotlight",
       linkText: "Visit Spotlight",
+    },
+    {
+      title: "UG Achievers Directory",
+      img: img1,
+      description:
+        "The Students' Branding and Relations Cell's UG Achievers Directory (UGAD) initiative aims to highlight IIT Kharagpur students who have accomplished notable achievements during a particular academic year. The official IIT Kharagpur website features UGAD.",
     },
   {
     title: "KGP Directory",

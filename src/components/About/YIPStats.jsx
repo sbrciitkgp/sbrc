@@ -16,7 +16,7 @@ import {
 import YIP from "./YIPdata.js";
 
 function YIPstats() {
-  const [iconTabs, setIconsTabs] = useState(5);
+  const [iconTabs, setIconsTabs] = useState(6);
   const ref = useRef(null);
   const ref2=useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -33,7 +33,7 @@ function YIPstats() {
           transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s"
         }}
      >
-      <h3 className="yipstats-heading">Young Innovators Program</h3>
+      <h3 className="yipstats-heading">Young Innovators' Program</h3>
       </motion.div>
       <motion.div className="yipcard"
        ref={ref2}
@@ -59,16 +59,16 @@ function YIPstats() {
                 >
                   <div>
                     <NavItem>
-                      <NavLink
-                        id={"yip-button" + navitem.id}
-                        className={"yip-button "+classnames({
-                          active: iconTabs === navitem.id
-                        })}
-                        onClick={(e) => setIconsTabs(navitem.id)}
-                        href="#"
-                      >
+                    <NavLink
+                      id={"yip-button" + navitem.id}
+                      className={"yip-button " + classnames({ active: iconTabs === navitem.id })}
+                      onClick={(e) => setIconsTabs(navitem.id)}
+                      href="#"
+                      style={{ fontSize: "1.5rem", padding: "12px 20px", borderRadius: "30px" }}
+                    >
                         <span className="text-success">
-                          <p>YIP {navitem.year}</p>
+                        <p>YIP {navitem.year} - {navitem.yearS}</p>
+
                         </span>
                       </NavLink>
                     </NavItem>
