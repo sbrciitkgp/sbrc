@@ -149,7 +149,7 @@ function Gallery(){
     return (
         <section id="gallery" >
         <div className="gallery-page">
-        <h1 className="gallery-title my-2">GALLERY</h1>
+        <h3 className="gallery-title my-2">Gallery</h3>
         <div className="gallery-slides my-5">
       <ImageGallery
         ref={galleryRef}

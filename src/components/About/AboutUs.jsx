@@ -26,9 +26,10 @@ function AboutUs() {
           transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s"
         }}>
             <div className="about-us">
-              <motion.h1>
-                ABOUT US
-              </motion.h1>
+            <motion.h3>
+                About Us
+              </motion.h3>
+              
             </div>
 
             <div className=" about-us-text">

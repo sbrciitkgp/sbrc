@@ -1,138 +1,121 @@
 #what-we-do {
-  font-family: Raleway, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #08707f;
-  justify-content: center;
-  padding-bottom: 100px;
-}
-
-.container-fluid {
-  display: flex;
-  justify-content: center;
-  padding: 0 !important;
-}
-.wwd-wrap {
-  padding: 100px 0 50px 0;
-  width: 100vw;
-}
-.wwd-title {
-  color: lavender;
-  font-weight: bold;
-  font-size: 3.8rem;
-  padding-bottom: 50px;
-}
-#con3,
-#con1,
-#con2,
-#con4 {
-  width: 24rem;
-  height: 32rem;
-  border: none;
-}
-
-.container:hover > .card {
-  cursor: pointer;
-  transform: rotateY(180deg);
-}
-
-.card {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  transition: transform 1000ms;
-  transform-style: preserve-3d;
-  border-radius: 20px;
-  scale: 0.9;
-}
-
-.front,
-.back {
-  border-radius: 20px !important;
-  height: 32rem;
-  width: 100%;
-  box-shadow: 0 0 5px 2px #04525e;
-  position: absolute;
-  backface-visibility: hidden;
-}
-
-.front {
-  justify-content: center;
-  font-weight: bold;
-  font-size: 2.1rem;
-  color: #012970;
-}
-
-.back {
-  background-color: #94c1c8;
-  transform: rotateY(180deg);
-  display: flex;
-  border-radius: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1.3rem;
-  scale: 1;
-  box-shadow: #04525e 0px 0px 3px 3px;
-}
-.back > p {
-  padding: 2rem;
-  font-weight: 500;
-}
-.profile_img > img {
-  object-fit: contain;
-  height: 25rem;
-  width: 100%;
-}
-.profile_img {
-  height: 25rem;
-  width: 100%;
-}
-
-.yip-redirect {
-  margin-left: 20px;
-  border: solid 0.3px transparent;
-  border-radius: 50px;
-  padding: 0.2rem 2rem;
-  margin-top: -40px;
-  color: #000;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   font-family: "Raleway", sans-serif;
-  text-decoration: none !important;
+  text-align: center;
+  background-color: #08707f;
+  /* padding: 60px 0; */
 }
 
-@media only screen and (max-width: 868px) {
-  .front > .text {
-    font-size: 32px;
+.wwd-title {
+  font-size: 3rem;
+  font-weight: 800;
+  padding: 1.2rem 0;
+  color: lavender;
+  margin-bottom: 4rem;
+  padding-top: 4rem;
+  /* margin-top: 4rem; */
+}
+
+.wwd-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr)); /* Two columns */
+  gap: 50px;
+  max-width: 80%;
+  margin: auto;
+  justify-content: center;
+}
+
+.wwd-card {
+  width: 100%; 
+  max-width: 650px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.wwd-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.wwd-image {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.wwd-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #012970;
+  margin-top: 15px;
+}
+
+.wwd-description {
+  font-size: 1.3rem;
+  color: #444;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.wwd-link {
+  margin-top: 12px;
+  display: inline-block;
+  color: #08707f;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #08707f;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.wwd-link:hover {
+  background-color: #08707f;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .wwd-column {
+    max-width: 90%;
+    gap: 20px;
   }
-  .back {
-    font-size: 20px;
-  }
-  .yip-redirect {
-    margin-top: -60px;
+  .wwd-card {
+    max-width: 450px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 768px) {
   .wwd-title {
-    font-size: 30px;
-    padding: 20px 0 0 0;
-    margin: 0;
+    font-size: 3.5rem;
   }
-  #what-we-do {
-    padding-bottom: 0;
+
+  .wwd-column {
+    grid-template-columns: 1fr; 
+    max-width: 90%;
+  }
+
+  .wwd-card {
+    width: 100%;
+    max-width: 95%;
+    padding: 20px;
   }
 }
 
-@media screen and (max-width: 334px) {
-  .back p {
-    font-size: 1rem;
+@media (max-width: 480px) {
+  .wwd-title {
+    font-size: 3rem;
+  }
+
+  .wwd-text {
+    font-size: 1.6rem;
+  }
+
+  .wwd-description {
+    font-size: 1.2rem;
   }
 }

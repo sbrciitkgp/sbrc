@@ -1,5 +1,16 @@
 const YIP = [
   {
+    id: "5",
+    year: "2023",
+    icon: "tim-icons icon-bulb-63 text-success pr-1",
+    school: "700",
+    student: "1400",
+    teams: "32",
+    idFirst: "2023-first",
+    idSecond: "2023-second",
+    idThird: "2023-third"
+  },
+  {
     id: "4",
     year: "2022",
     icon: "tim-icons icon-bulb-63 text-success pr-1",

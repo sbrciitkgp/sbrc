@@ -16,7 +16,7 @@ import {
 import YIP from "./YIPdata.js";
 
 function YIPstats() {
-  const [iconTabs, setIconsTabs] = useState(4);
+  const [iconTabs, setIconsTabs] = useState(5);
   const ref = useRef(null);
   const ref2=useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -81,28 +81,10 @@ function YIPstats() {
         <CardBody className="yipcardbody">
           <TabContent className="tab-space" activeTab={"link" + iconTabs}>
             {YIP.map((item) => {
-               
-                
-                function count(e,i){
-                let s1,s2,s3;
-                let state=[
-                   s1=false,
-                   s2=false,
-                   s3=false
-                ];
-                    if(state[i])
-                    {
-                        
-                        return e;
-                    }
-                    else{
-                        state[i]=true;
-                    return (
-                          <CountUp end={e} duration={10}  redraw={true}>
-                          </CountUp>
-                          );
-                }
-                }
+               function count(e) {
+                return <CountUp end={parseInt(e, 10)} duration={10} redraw={true} />;
+              }
+              
               return (
                 <TabPane key={item.year} tabId={"link" + item.id}>
                   <div className="yipitems">
