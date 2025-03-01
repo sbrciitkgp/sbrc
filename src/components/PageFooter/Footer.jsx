@@ -12,11 +12,11 @@ function Footer() {
 
   return (
     <div>
-      <footer id="footer" class="footer">
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-5 col-md-12 footer-info">
-              <a href="index.html" class="logo d-flex align-items-center">
+      <footer id="footer" className="footer">
+        <div className="container">
+          <div className="row gy-4">
+            <div className="col-lg-5 col-md-12 footer-info">
+              <a href="index.html" className="logo d-flex align-items-center">
                 <HashLink to={"/home-page#home-page"}>
                   <span>SBRC</span>
                 </HashLink>
@@ -26,7 +26,7 @@ function Footer() {
                 the aegis of the Office of Alumni Affairs & International
                 Relations.
               </p>
-              <div class="social-links d-flex mt-4">
+              <div className="social-links d-flex mt-4">
                 <a
                   target="_blank"
                   rel="noreferrer"
@@ -58,39 +58,39 @@ function Footer() {
               </div>
             </div>
 
-            <div class="col-lg-2 col-6 footer-links">
+            <div className="col-lg-2 col-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <a href="">
-                    <HashLink
-                      className="nav-link scrollto active home-page"
-                      style={{ width: "auto" }}
-                      to={"/home-page#home-page"}
-                    >
-                      Home
-                    </HashLink>
-                  </a>
+                  {/* <a href="/home"> */}
+                  <HashLink
+                    className="nav-link scrollto active home-page"
+                    style={{ width: "auto" }}
+                    to={"/home-page#home-page"}
+                  >
+                    Home
+                  </HashLink>
+                  {/* </a> */}
                 </li>
                 <li>
-                  <a href="">
-                    <HashLink
-                      className="nav-link scrollto about-page"
-                      to={"/home-page#about-page"}
-                    >
-                      About
-                    </HashLink>
-                  </a>
+                  {/* <a href=""> */}
+                  <HashLink
+                    className="nav-link scrollto about-page"
+                    to={"/home-page#about-page"}
+                  >
+                    About
+                  </HashLink>
+                  {/* </a> */}
                 </li>
                 <li>
-                  <a href="">
-                    <HashLink
-                      className="nav-link scrollto what-we-do"
-                      to={"/home-page#what-we-do"}
-                    >
-                      What We Do
-                    </HashLink>
-                  </a>
+                  {/* <a href=""> */}
+                  <HashLink
+                    className="nav-link scrollto what-we-do"
+                    to={"/home-page#what-we-do"}
+                  >
+                    What We Do
+                  </HashLink>
+                  {/* </a> */}
                 </li>
                 <li>
                   <a
@@ -102,29 +102,29 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="">
-                    <HashLink
-                      className="nav-link scrollto gallery"
-                      to={"/home-page#gallery"}
-                    >
-                      Gallery
-                    </HashLink>
-                  </a>
+                  {/* <a href=""> */}
+                  <HashLink
+                    className="nav-link scrollto gallery"
+                    to={"/home-page#gallery"}
+                  >
+                    Gallery
+                  </HashLink>
+                  {/* </a> */}
                 </li>
                 <li>
-                  <a href="">
-                    <HashLink
-                      className="nav-link scrollto contact-us-page"
-                      to={"/home-page#contact-us-page"}
-                    >
-                      Contact
-                    </HashLink>
-                  </a>
+                  {/* <a href=""> */}
+                  <HashLink
+                    className="nav-link scrollto contact-us-page"
+                    to={"/home-page#contact-us-page"}
+                  >
+                    Contact
+                  </HashLink>
+                  {/* </a> */}
                 </li>
               </ul>
             </div>
 
-            <div class="col-lg-2 col-6 footer-links">
+            <div className="col-lg-2 col-6 footer-links">
               <h4>Our Services</h4>
               <ul>
                 <li>
@@ -136,7 +136,7 @@ function Footer() {
                   <a href="#">UG Achievers Directory</a>
                 </li>
                 <li>
-                  <a href="#">Spotlight</a>
+                  <a href="/spotlight">Spotlight</a>
                 </li>
                 <li>
                   <a href="#">KGP Directory</a>
@@ -144,7 +144,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <div className="col-lg-3 col-md-12 footer-contact text-md-start">
               <h4>Contact Us</h4>
               <p>
                 Students' Branding and Relations Cell <br />
@@ -159,8 +159,8 @@ function Footer() {
           </div>
         </div>
 
-        <div class="container mt-4">
-          <div class="copyright">
+        <div className="container mt-4">
+          <div className="copyright">
             Copyright &copy; {time}. All Rights Reserved{" "}
             <strong>
               <span>| Students' Branding and Relations Cell</span>
