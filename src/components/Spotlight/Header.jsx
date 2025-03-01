@@ -3,14 +3,16 @@ import React from "react";
 function header() {
   return (
     <>
-      <div className="mt-1 spotlight-header" id="spotlight-header">
-        <div className="col-12 col-sm-10 offset-sm-1 mb-0 p-0">
-          <div className="card">
-            <div className="card-body">
-              <h1 className="card-title text-center">
+      <div className="pt-4 spotlight-header m-sm-0 " id="spotlight-header">
+        <div className="col-10  offset-1 mb-0 p-0 ">
+          <div className="card overflow-hidden border border-0">
+            <div className="h-20 heading d-flex align-items-center justify-content-center">
+              <h1 className="text-center ">
                 <b>Spotlight</b>
               </h1>
-              <p className="card-text">
+            </div>
+            <div className="card-body">
+              <p className="card-text ">
                 The Students' Branding and Relations Cell has launched a
                 ‘Spotlight’ initiative for IIT Kharagpur students, allowing
                 students to highlight their accomplishments and awards. In the

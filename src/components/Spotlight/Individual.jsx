@@ -26,7 +26,7 @@ function Individual({ details, onModalClick }) {
 
   return (
     <div
-      className="col-sm-6 col-lg-4 col-12 offset-0 offset-sm-0 offset-lg-0 individual"
+      className="col-sm-6 col-lg-4 col-12 offset-0 offset-sm-0 offset-lg-0 individual my-3"
       id="individual"
     >
       <div className="h-sm-60">

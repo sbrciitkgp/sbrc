@@ -19,7 +19,7 @@ function Spotlight() {
       <Header />
       <div className="individual-container ">
         <h1 className="text-center individual-head">Previous Episodes</h1>
-        <div className="row px-md-4">
+        <div className="row px-md-4 mx-1 mx-sm-4">
           {details.map((detail) => {
             return (
               <Individual

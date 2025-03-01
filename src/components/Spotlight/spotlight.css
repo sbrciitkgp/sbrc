@@ -2,6 +2,18 @@
   margin-top: 4rem !important;
 }
 
+#spotlight-header .heading h1 {
+  font-size: 3rem;
+  color: black;
+}
+
+#spotlight-header .heading {
+  height: 6rem;
+
+  /* background: rgb(57, 222, 85); */
+  /* background: linear-gradient(90deg, #03977a 0%, #1f201c 50%, #03977a 100%); */
+}
+
 .card-text i {
   color: rgb(35, 95, 224);
   margin-right: 10px;
@@ -57,6 +69,9 @@ iframe {
 }
 .spotlight-header {
   background-color: #08707f;
+}
+.spotlight-header .redirect-btn {
+  font-size: 1.5rem;
 }
 
 .individual-container {
@@ -137,6 +152,9 @@ iframe {
   }
   .individual-head {
     font-size: 2rem;
+  }
+  .spotlight-header .heading h1 {
+    font-size: 2.3rem !important;
   }
 }
 
