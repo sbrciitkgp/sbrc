@@ -20,20 +20,22 @@ const items = [
     img: img3,
     description:
       "The Students' Branding and Relations Cell has launched a ‘Spotlight’ initiative for IIT Kharagpur students, allowing them to highlight their accomplishments in fields such as sports, academics, technology, and welfare.",
-      link: "/spotlight",
-      linkText: "Visit Spotlight",
-    },
-    {
-      title: "UG Achievers Directory",
-      img: img1,
-      description:
-        "The Students' Branding and Relations Cell's UG Achievers Directory (UGAD) initiative aims to highlight IIT Kharagpur students who have accomplished notable achievements during a particular academic year. The official IIT Kharagpur website features UGAD.",
-    },
+    link: "/spotlight",
+    linkText: "Visit Spotlight",
+  },
+  {
+    title: "UG Achievers Directory",
+    img: img1,
+    description:
+      "The Students' Branding and Relations Cell's UG Achievers Directory (UGAD) initiative aims to highlight IIT Kharagpur students who have accomplished notable achievements during a particular academic year. The official IIT Kharagpur website features UGAD.",
+  },
   {
     title: "KGP Directory",
     img: img4,
     description:
       "KGP Directory is an initiative of the Students' Branding and Relations Cell, comprising everything about IIT Kharagpur in a highly structured format. It contains all essential information a fresher would require, all under one roof.",
+    link: "https://drive.google.com/file/d/1xLpHLJshQ_OekVm90RRvzW69sad47gNb/view",
+    linkText: "Visit",
   },
 ];
 
