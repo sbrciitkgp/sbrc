@@ -64,11 +64,11 @@ function Hero() {
 
           <motion.div className="buttons-container" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }}>
             <a href="https://yip.iitkgp.ac.in/" className="visit-btn" target="_blank" rel="noopener noreferrer">
-            Visit YIP
+            VISIT YIP
             </a>
 
             <Link to="/spotlight" className="visit-btn">
-              Visit Spotlight
+              VISIT SPOTLIGHT
             </Link>
           </motion.div>
 

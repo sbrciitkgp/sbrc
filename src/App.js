@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import { Route, Routes } from "react-router-dom";
 import Spotlight from "./components/Spotlight/Spotlight.jsx";
+import Flipbook from "./components/UGAD/Flipbook.jsx";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="#gallery" element={<View />} />
           <Route path="#contact" element={<View />} />
           <Route path="/spotlight" element={<Spotlight />} />
+          <Route path="/flipbook" element={<Flipbook />} />
         </Routes>
       </Router>
     </>
