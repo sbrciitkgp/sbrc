@@ -4,8 +4,9 @@ import Header from "./Header";
 import Footer from "../PageFooter/Footer";
 import Individual from "./Individual";
 import Modal from "./Modal";
+import Latest from "./Latest.jsx";
 import "./spotlight.css";
-import details from "./details.js";
+import { details, latest } from "./details.js";
 
 function Spotlight() {
   const [modalValue, setModalValue] = useState({});
@@ -16,23 +17,26 @@ function Spotlight() {
   return (
     <>
       <Navbar />
-      <Header />
-      <div className="individual-container ">
-        <h1 className="text-center individual-head">Previous Episodes</h1>
-        <div className="row px-md-4 mx-1 mx-sm-4">
-          {details.map((detail) => {
-            return (
-              <Individual
-                details={detail}
-                key={detail.name}
-                onModalClick={changeModalValue}
-              />
-            );
-          })}
+      <div className="spotlight-body">
+        <Header />
+        <Latest latest={latest} />
+        <div className="individual-container ">
+          <h1 className="text-center individual-head">Previous Episodes</h1>
+          <div className="row px-md-4 mx-1 mx-sm-4">
+            {details.map((detail) => {
+              return (
+                <Individual
+                  details={detail}
+                  key={detail.name}
+                  onModalClick={changeModalValue}
+                />
+              );
+            })}
+          </div>
         </div>
+        <Modal modalValue={modalValue} />
+        <Footer />
       </div>
-      <Modal modalValue={modalValue} />
-      <Footer />
     </>
   );
 }

@@ -7,8 +7,7 @@ import { HashLink } from "react-router-hash-link";
 import "animate.css";
 function Navbar() {
   const location = useLocation();
-  const isHomePage =
-    location.pathname === "/" || location.pathname === "/home-page";
+  const isHomePage = location.pathname === "/" || location.pathname === "/home";
   const [header, changeHeader] = useState("header fixed-top ");
   window.onscroll = function () {
     if (document.documentElement.scrollTop > 20) {
@@ -23,9 +22,9 @@ function Navbar() {
 
   window.addEventListener("scroll", () => {
     if (
-      location.pathname === "/home-page" ||
+      location.pathname === "/home" ||
       location.pathname === "/" ||
-      location.pathname === "/home-page#home-page"
+      location.pathname === "/home#home-page"
     ) {
       let current = "";
       sections.forEach((section) => {
@@ -77,7 +76,7 @@ function Navbar() {
         <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
           <Link
             className="logo d-flex align-items-center "
-            to={"/home-page#home-page"}
+            to={"/home#home-page"}
           >
             <img
               style={{ scale: "1.1" }}
@@ -96,94 +95,75 @@ function Navbar() {
                   }}
                 >
                   <HashLink
-                    className={`nav-link scrollto home-page ${
-                      location.pathname ===
-                      ("/home-page" || "/" || "/home-page#home-page")
-                        ? "active"
-                        : ""
+                    className={`nav-link scrollto home-page fw-semibold ${
+                      isHomePage ? "active" : ""
                     }`}
                     style={{ width: "auto" }}
-                    to={"/home-page"}
+                    to={"/home"}
                   >
                     Home
                   </HashLink>
                 </li>
                 <li onClick={closeNav}>
                   <HashLink
-                    className="nav-link scrollto about-page"
-                    to={"/home-page#about-page"}
+                    className="nav-link scrollto about-page fw-semibold"
+                    to={"/home#about-page"}
                   >
                     About
                   </HashLink>
                 </li>
                 <li>
-                  {isHomePage ? (
-                    <HashLink
-                      className="nav-link scrollto what-we-do"
-                      to="/home-page#what-we-do"
-                      onClick={closeNav}
+                  <li className="position-relative fw-semibold">
+                    {" "}
+                    <a
+                      className="dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      onMouseEnter={() => setDropdownOpen(true)}
                     >
                       What We Do
-                    </HashLink>
-                  ) : (
-                    <li className="position-relative">
-                      {" "}
-                      <a
-                        className="dropdown-toggle"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                        onMouseEnter={() => setDropdownOpen(true)}
-                      >
-                        What We Do
-                      </a>
+                    </a>
+                    <div
+                      className={`dropdown-menu ${
+                        isDropdownOpen ? "show" : ""
+                      } mx-2`}
+                    >
                       <div
-                        className={`dropdown-menu ${
-                          isDropdownOpen ? "show" : ""
-                        } mx-2`}
+                        className="postion-absolute "
+                        onMouseEnter={() => setDropdownOpen(true)}
+                        onMouseLeave={() => {
+                          setDropdownOpen(false);
+                        }}
                       >
-                        <div
-                          className=" "
-                          onMouseEnter={() => setDropdownOpen(true)}
-                          onMouseLeave={() => {
-                            setDropdownOpen(false);
-                          }}
-                        >
-                          <li onClick={() => setDropdownOpen(false)}>
-                            <Link
-                              to="https://yip.iitkgp.ac.in/"
-                              target="_blank"
-                            >
-                              YIP
-                            </Link>
-                          </li>
-                          <li onClick={() => setDropdownOpen(false)}>
-                            <Link
-                              to="/spotlight"
-                              className="scrollto spotlight"
-                            >
-                              Spotlight
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="">UGAD</Link>
-                          </li>
-                          <li onClick={() => setDropdownOpen(false)}>
-                            <Link
-                              to="https://drive.google.com/file/d/1xLpHLJshQ_OekVm90RRvzW69sad47gNb/view"
-                              target="_blank"
-                            >
-                              KGP Directory
-                            </Link>
-                          </li>
-                        </div>
+                        <li onClick={() => setDropdownOpen(false)}>
+                          <Link to="https://yip.iitkgp.ac.in/" target="_blank">
+                            YIP
+                          </Link>
+                        </li>
+                        <li onClick={() => setDropdownOpen(false)}>
+                          <Link to="/spotlight" className="scrollto spotlight">
+                            Spotlight
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/ugad">UGAD</Link>
+                        </li>
+                        <li onClick={() => setDropdownOpen(false)}>
+                          <Link
+                            to="https://drive.google.com/file/d/1xLpHLJshQ_OekVm90RRvzW69sad47gNb/view"
+                            target="_blank"
+                          >
+                            KGP Directory
+                          </Link>
+                        </li>
                       </div>
-                    </li>
-                  )}
+                    </div>
+                  </li>
                 </li>
                 <li onClick={closeNav}>
                   <NavLink
-                    className="nav-link"
+                    className="nav-link fw-semibold"
                     to="/spotlight"
                     activeClassName="active"
                   >
@@ -192,7 +172,7 @@ function Navbar() {
                 </li>
                 <li onClick={closeNav}>
                   <NavLink
-                    className="nav-link"
+                    className="nav-link fw-semibold"
                     to="/team"
                     activeClassName="active"
                   >
@@ -201,16 +181,16 @@ function Navbar() {
                 </li>
                 <li onClick={closeNav}>
                   <HashLink
-                    className="nav-link scrollto gallery"
-                    to="/home-page#gallery"
+                    className="nav-link scrollto gallery fw-semibold"
+                    to="/home#gallery"
                   >
                     Gallery
                   </HashLink>
                 </li>
                 <li onClick={closeNav}>
                   <HashLink
-                    className="nav-link scrollto contact-us-page"
-                    to="/home-page#contact-us-page"
+                    className="nav-link scrollto contact-us-page fw-semibold"
+                    to="/home#contact-us-page"
                   >
                     Contact Us
                   </HashLink>

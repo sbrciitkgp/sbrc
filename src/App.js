@@ -18,13 +18,13 @@ function App() {
         <Routes>
           <Route path="/" element={<View />} />
           <Route path="/team" element={<TeamPage />} />
-          <Route path="/home-page" element={<View />} />
+          <Route path="/home" element={<View />} />
           <Route path="#about" element={<View />} />
           <Route path="#what-we-do" element={<View />} />
           <Route path="#gallery" element={<View />} />
           <Route path="#contact" element={<View />} />
           <Route path="/spotlight" element={<Spotlight />} />
-          <Route path="/flipbook" element={<Flipbook />} />
+          <Route path="/ugad" element={<Flipbook />} />
         </Routes>
       </Router>
     </>

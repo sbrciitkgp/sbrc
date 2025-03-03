@@ -133,7 +133,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="/flipbook">UG Achievers Directory</a>
+                  <a href="/ugad">UG Achievers Directory</a>
                 </li>
                 <li>
                   <a href="/spotlight">Spotlight</a>

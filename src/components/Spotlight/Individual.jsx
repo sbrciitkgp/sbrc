@@ -61,10 +61,16 @@ function Individual({ details, onModalClick }) {
                   </>
                 )}
 
-                <p className="card-text about text-justify">
-                  {isExpanded
-                    ? details.about
-                    : `${details.about.substring(0, maxLength)}...`}
+                <p
+                  className="card-text about text-justify"
+                  style={{
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                  }}
+                >
+                  {details.about}
                 </p>
 
                 {isExpanded ? (
@@ -97,7 +103,7 @@ function Individual({ details, onModalClick }) {
                 ) : null}
 
                 <button
-                  className="read-more-btn ms-auto"
+                  className="read-more-btn ms-auto fs-6 fw-semibold"
                   data-bs-toggle="modal"
                   data-bs-target="#staticBackdrop"
                   onClick={changeView}

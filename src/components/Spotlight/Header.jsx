@@ -5,13 +5,24 @@ function header() {
     <>
       <div className="pt-4 spotlight-header m-sm-0 " id="spotlight-header">
         <div className="col-10  offset-1 mb-0 p-0 ">
-          <div className="card overflow-hidden border border-0">
+          <div
+            className="card overflow-hidden border border-0"
+            style={{ backgroundColor: "#08707f" }}
+          >
             <div className="h-20 heading d-flex align-items-center justify-content-center">
               <h1 className="text-center ">
                 <b>Spotlight</b>
               </h1>
             </div>
-            <div className="card-body">
+            <div
+              className="card-body"
+              id="spotlight-intro"
+              style={{
+                borderRadius: "20px",
+                overflow: "hidden",
+                backgroundColor: "white",
+              }}
+            >
               <p className="card-text ">
                 The Students' Branding and Relations Cell has launched a
                 ‘Spotlight’ initiative for IIT Kharagpur students, allowing

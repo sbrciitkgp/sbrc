@@ -1,4 +1,5 @@
 import React from "react";
+import Socials from "./Socials";
 function ModalIndividual({ modalValue }) {
   return (
     <div className="row" id="individual">
@@ -31,52 +32,9 @@ function ModalIndividual({ modalValue }) {
               </p>
 
               <p className="card-text about text-justify">{modalValue.about}</p>
-
-              <div className="card-body social-links  ">
-                <p className="text-center d-flex justify-content-between align-items-center">
-                  {modalValue.medium && (
-                    <span className="d-flex align-items-center">
-                      Read on &nbsp;
-                      <a href={modalValue.medium} target="_blank">
-                        <button className="redirect-btn m-0">
-                          Medium{" "}
-                          <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i>
-                        </button>
-                      </a>
-                    </span>
-                  )}
-                  <span className="mt-2 d-flex align-items-center">
-                    Connect: &nbsp;&nbsp;&nbsp;&nbsp;
-                    {modalValue.linkedin && (
-                      <a
-                        href={modalValue.linkedin}
-                        target="_blank"
-                        className="me-2"
-                      >
-                        <i className="fa fa-linkedin-square"></i>
-                      </a>
-                    )}
-                    {modalValue.facebook && (
-                      <a
-                        href={modalValue.facebook}
-                        target="_blank"
-                        className="me-2"
-                      >
-                        <i className="fa fa-facebook-square"></i>
-                      </a>
-                    )}
-                    {modalValue.instagram && (
-                      <a
-                        href={modalValue.instagram}
-                        target="_blank"
-                        className="me-2"
-                      >
-                        <i className="fa-brands fa-square-instagram"></i>
-                      </a>
-                    )}
-                  </span>
-                </p>
-              </div>
+              <p className="mt-4">
+                <Socials social={modalValue} />
+              </p>
             </div>
           </div>
         </div>
