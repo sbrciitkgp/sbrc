@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function Individual({ details, onModalClick }) {
+function Individual({ details, onModalClick, handleModalClose }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const maxLength = 100;
@@ -22,6 +22,7 @@ function Individual({ details, onModalClick }) {
 
   const changeView = () => {
     onModalClick(details);
+    handleModalClose(true);
   };
 
   return (
@@ -106,7 +107,9 @@ function Individual({ details, onModalClick }) {
                   className="read-more-btn ms-auto fs-6 fw-semibold"
                   data-bs-toggle="modal"
                   data-bs-target="#staticBackdrop"
-                  onClick={changeView}
+                  onClick={() => {
+                    changeView();
+                  }}
                 >
                   {isExpanded ? "Read Less" : "Read More"}
                 </button>

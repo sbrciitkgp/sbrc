@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import ModalIndividual from "./ModalIndividual";
 import Img from "../../assets/images/sbrclogo.png";
-function Modal({ modalValue }) {
+function Modal({ modalValue, handleModalClose, isModalOpen }) {
+  const pauseVideo = () => {
+    handleModalClose(false);
+  };
   return (
     <div
       className="modal"
@@ -26,11 +29,15 @@ function Modal({ modalValue }) {
               className="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
+              onClick={pauseVideo}
             ></button>
           </div>
           {/* <h1 className="m-0 font-s">Soptlight</h1> */}
           <div className="modal-body p-sm-4 ">
-            <ModalIndividual modalValue={modalValue} />
+            <ModalIndividual
+              modalValue={modalValue}
+              isModalOpen={isModalOpen}
+            />
           </div>
         </div>
       </div>

@@ -10,7 +10,10 @@ import { details, latest } from "./details.js";
 
 function Spotlight() {
   const [modalValue, setModalValue] = useState({});
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleModalClose = (value) => {
+    setIsModalOpen(value);
+  };
   const changeModalValue = (details) => {
     setModalValue(details);
   };
@@ -29,12 +32,17 @@ function Spotlight() {
                   details={detail}
                   key={detail.name}
                   onModalClick={changeModalValue}
+                  handleModalClose={handleModalClose}
                 />
               );
             })}
           </div>
         </div>
-        <Modal modalValue={modalValue} />
+        <Modal
+          modalValue={modalValue}
+          handleModalClose={handleModalClose}
+          isModalOpen={isModalOpen}
+        />
         <Footer />
       </div>
     </>

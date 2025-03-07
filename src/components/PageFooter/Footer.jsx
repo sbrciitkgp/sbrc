@@ -17,7 +17,7 @@ function Footer() {
           <div className="row gy-4">
             <div className="col-lg-5 col-md-12 footer-info">
               <a href="index.html" className="logo d-flex align-items-center">
-                <HashLink to={"/home-page#home-page"}>
+                <HashLink to={"/home#home-page"}>
                   <span>SBRC</span>
                 </HashLink>
               </a>
@@ -66,7 +66,7 @@ function Footer() {
                   <HashLink
                     className="nav-link scrollto active home-page"
                     style={{ width: "auto" }}
-                    to={"/home-page#home-page"}
+                    to={"/home#home-page"}
                   >
                     Home
                   </HashLink>
@@ -76,7 +76,7 @@ function Footer() {
                   {/* <a href=""> */}
                   <HashLink
                     className="nav-link scrollto about-page"
-                    to={"/home-page#about-page"}
+                    to={"/home#about-page"}
                   >
                     About
                   </HashLink>
@@ -86,7 +86,7 @@ function Footer() {
                   {/* <a href=""> */}
                   <HashLink
                     className="nav-link scrollto what-we-do"
-                    to={"/home-page#what-we-do"}
+                    to={"/home#what-we-do"}
                   >
                     What We Do
                   </HashLink>
@@ -105,7 +105,7 @@ function Footer() {
                   {/* <a href=""> */}
                   <HashLink
                     className="nav-link scrollto gallery"
-                    to={"/home-page#gallery"}
+                    to={"/home#gallery"}
                   >
                     Gallery
                   </HashLink>
@@ -115,7 +115,7 @@ function Footer() {
                   {/* <a href=""> */}
                   <HashLink
                     className="nav-link scrollto contact-us-page"
-                    to={"/home-page#contact-us-page"}
+                    to={"/home#contact-us-page"}
                   >
                     Contact
                   </HashLink>

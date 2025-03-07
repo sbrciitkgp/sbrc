@@ -1,13 +1,13 @@
 import React from "react";
 import Socials from "./Socials";
-function ModalIndividual({ modalValue }) {
+function ModalIndividual({ modalValue, isModalOpen }) {
   return (
     <div className="row" id="individual">
       <div className="card p-3 h-100">
         <div className="row g-0">
           <div className="col-12 col-xl-7  d-flex align-items-start justify-content-center p-0 pt-4">
             <div className="overflow-hidden w-100 iframe-container">
-              {modalValue.video}
+              {isModalOpen ? modalValue.video : null}
             </div>
           </div>
           <div
