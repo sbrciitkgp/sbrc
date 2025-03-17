@@ -14,6 +14,7 @@ const items = [
       "Young Innovators' Program is a platform to foster young minds with scientific enthusiasm and a credo to solve the problems facing the globe. In a two-day visit to IIT Kharagpur, students will get a chance to explore the scientific environment and present their projects in front of distinguished researchers and guests. YIP not only promotes scientific thinking but also nurtures innovation and problem-solving skills, aligning to the national vision to become Vishwaguru.",
     link: "https://yip.iitkgp.ac.in/",
     linkText: "Visit YIP",
+    linkTarget: "_blank",
   },
   {
     title: "Spotlight",
@@ -22,6 +23,7 @@ const items = [
       "The Students' Branding and Relations Cell has launched a ‘Spotlight’ initiative for IIT Kharagpur students, allowing them to highlight their accomplishments in fields such as sports, academics, technology, and welfare.",
     link: "/spotlight",
     linkText: "Visit Spotlight",
+    linkTarget: "_self",
   },
   {
     title: "UG Achievers Directory",
@@ -30,6 +32,7 @@ const items = [
       "The Students' Branding and Relations Cell's UG Achievers Directory (UGAD) initiative aims to highlight IIT Kharagpur students who have accomplished notable achievements during a particular academic year. The official IIT Kharagpur website features UGAD.",
     link: "/ugad",
     linkText: "Visit",
+    linkTarget: "_blank",
   },
   {
     title: "KGP Directory",
@@ -38,6 +41,7 @@ const items = [
       "KGP Directory is an initiative of the Students' Branding and Relations Cell, comprising everything about IIT Kharagpur in a highly structured format. It contains all essential information a fresher would require, all under one roof.",
     link: "https://drive.google.com/file/d/1xLpHLJshQ_OekVm90RRvzW69sad47gNb/view",
     linkText: "Visit",
+    linkTarget: "_blank",
   },
 ];
 
@@ -67,7 +71,7 @@ function WWD() {
               {item.link && (
                 <a
                   href={item.link}
-                  target="_blank"
+                  target={item.linkTarget}
                   rel="noreferrer"
                   className="wwd-link"
                 >
