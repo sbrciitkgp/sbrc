@@ -31,24 +31,24 @@ const gensec2022 = [
 ];
 
 const eventHead2022 = [
-  {
-    name: "Aditya Mohite",
-    pos: "Senior Coordinator",
-    img: aditya,
-    fb: "https://www.facebook.com/aditya.mohite.5245?__tn__=-]K*F",
-    linkedin: "https://www.linkedin.com/in/adityamohiteiit/",
-    contact: "#",
-    mail: "#",
-  },
-  {
-    name: "Samyukta Kagdelwar",
-    img: samyu,
-    pos: "Senior Coordinator",
-    fb: "https://www.facebook.com/samyukta.kagdelwar",
-    linkedin: "https://www.linkedin.com/in/samyukta-kagdelwar-1027b020b/",
-    contact: "#",
-    mail: "#",
-  },
+  // {
+  //   name: "Aditya Mohite",
+  //   pos: "Senior Coordinator",
+  //   img: aditya,
+  //   fb: "https://www.facebook.com/aditya.mohite.5245?__tn__=-]K*F",
+  //   linkedin: "https://www.linkedin.com/in/adityamohiteiit/",
+  //   contact: "#",
+  //   mail: "#",
+  // },
+  // {
+  //   name: "Samyukta Kagdelwar",
+  //   img: samyu,
+  //   pos: "Senior Coordinator",
+  //   fb: "https://www.facebook.com/samyukta.kagdelwar",
+  //   linkedin: "https://www.linkedin.com/in/samyukta-kagdelwar-1027b020b/",
+  //   contact: "#",
+  //   mail: "#",
+  // },
   {
     img: shashi,
     name: "Shashi Ranjan",
@@ -111,4 +111,4 @@ const designHead2022 = [
   },
 ];
 
-export { gensec2022, designHead2022, eventHead2022};
+export { gensec2022, designHead2022, eventHead2022 };

@@ -10,17 +10,21 @@ import {
   eventHead2024,
   publicHead2024,
   sponsHead2024,
-
 } from "./Heads";
-import {  gensec2022, designHead2022, eventHead2022 } from "./ExTeam2022";
-import {  gensec2021, designHead2021, eventHead2021 } from "./ExTeam2021";
-import { gensec2020,sponsHead2020, designHead2020, eventHead2020 } from "./ExTeam2020";
+import { gensec2022, designHead2022, eventHead2022 } from "./ExTeam2022";
+import { gensec2021, designHead2021, eventHead2021 } from "./ExTeam2021";
+import {
+  gensec2020,
+  sponsHead2020,
+  designHead2020,
+  eventHead2020,
+} from "./ExTeam2020";
 
 import studData from "./StudentMembers";
 // import asmData from "./AssociateMembers";
 import { motion } from "framer-motion";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 //   return (
 //     <div>
@@ -46,13 +50,13 @@ import React, { useState } from 'react';
 
 function Teams() {
   const [content, setContent] = useState("2024");
-  const options = ["2024", "2023","2022","2021","2020"];
+  const options = ["2024", "2023", "2022", "2021", "2020"];
   const data = {
-    "2024": [gsec2024,sponsHead2024,publicHead2024],
-    "2023": [gensecdata,sponsHead,eventHead,designHead],
-    "2022": [gensec2022, eventHead2022,designHead2022],
-    "2021": [ gensec2021,eventHead2021,designHead2021],
-    "2020": [gensec2020,sponsHead2020,eventHead2020, designHead2020],
+    2024: [gsec2024, sponsHead2024, publicHead2024],
+    2023: [gensecdata, sponsHead, eventHead, designHead],
+    2022: [gensec2022, eventHead2022, designHead2022],
+    2021: [gensec2021, eventHead2021, designHead2021],
+    2020: [gensec2020, sponsHead2020, eventHead2020, designHead2020],
   };
 
   return (
@@ -79,32 +83,42 @@ function Teams() {
               className=" team-title senior-title pt-0 mt-0"
               style={{ color: "#08707f" }}
             >
-              <span style={{ fontFamily: "sans-serif" }} >
-              <div class="btn-group align-items-center">
-              <span class="mx-auto my-auto"> EXECUTIVE TEAM {content} </span>
-                <button
-                  className=" dropdown-toggle mx-auto my-auto"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  {/* {content} */}
-                  <i class="fa-solid fa-caret-down" style={{color: "#08707f"}}></i>
-                </button> <ul className="dropdown-menu dropdown-menu-end fade" aria-labelledby="dropdownMenuButton">
-                  {options.map((option, index) => (
-                     <li key={index}>
-                      <button
-                        className="dropdown-item"
-                        onClick={() => setContent(option)}
-                      >
-                        {option}
-                      </button>
-                     </li>
-                    ))}
-                  </ul>
-                  </div>
+              <span style={{ fontFamily: "sans-serif" }}>
+                <div class="btn-group align-items-center">
+                  <span class="mx-auto my-auto">
+                    {" "}
+                    EXECUTIVE TEAM {content}{" "}
+                    <button
+                      className=" dropdown-toggle mx-auto my-auto"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      {/* {content} */}
+                      <i
+                        class="fa-solid fa-caret-down"
+                        style={{ color: "#08707f" }}
+                      ></i>
+                    </button>
+                    <ul
+                      className="dropdown-menu dropdown-menu-end fade"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      {options.map((option, index) => (
+                        <li key={index}>
+                          <button
+                            className="dropdown-item"
+                            onClick={() => setContent(option)}
+                          >
+                            {option}
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
                   </span>
+                </div>
+              </span>
             </h3>
             {/* <div className="gSec">
               {data[content][0].map((gsec) => {
@@ -355,56 +369,69 @@ function Teams() {
                 )}
               ))}
             </div> */}
-          {data[content].map((posholder,index) => (
-            <div className="spons">
-              {posholder.map((event, i) => (
-                <div key={event.name} className="col-sm-6 col-md-6 col-lg-4 my-auto">
-                  <div className="our-team">
-                    <motion.div className="team_img">
-                      <motion.img
-                        className={`head-img ${ index === 2 && i === 0 ? "scale" : ""}`}
-                        // className="head-img"
-                        src={event.img}
-                        alt={event.name}
-                      />
-                      <ul className="social-team">
-                        <li>
-                          <a href={event.fb} target="_blank" rel="noreferrer">
-                            <i className="fab fa-facebook"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${event.mail}`}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <i className="fa fa-envelope"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href={event.linkedin} target="_blank" rel="noreferrer">
-                            <i className="fab fa-linkedin"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href={`tel:${event.contact}`} target="_blank" rel="noreferrer">
-                            <i className="fa fa-mobile"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </motion.div>
-                    <div className="team-content">
-                      <h3 className="team-title">{event.name}</h3>
-                      <span style={{ color: "red " }} className="post">
-                        {event.pos}
-                      </span>
+            {data[content].map((posholder, index) => (
+              <div className="spons">
+                {posholder.map((event, i) => (
+                  <div
+                    key={event.name}
+                    className="col-sm-6 col-md-6 col-lg-4 my-auto"
+                  >
+                    <div className="our-team">
+                      <motion.div className="team_img">
+                        <motion.img
+                          className={`head-img ${
+                            index === 2 && i === 0 ? "scale" : ""
+                          }`}
+                          // className="head-img"
+                          src={event.img}
+                          alt={event.name}
+                        />
+                        <ul className="social-team">
+                          <li>
+                            <a href={event.fb} target="_blank" rel="noreferrer">
+                              <i className="fab fa-facebook"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${event.mail}`}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <i className="fa fa-envelope"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href={event.linkedin}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <i className="fab fa-linkedin"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href={`tel:${event.contact}`}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <i className="fa fa-mobile"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </motion.div>
+                      <div className="team-content">
+                        <h3 className="team-title">{event.name}</h3>
+                        <span style={{ color: "red " }} className="post">
+                          {event.pos}
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
                 ))}
-            </div>
-          ))}
+              </div>
+            ))}
             {/* <div className="design">
               {designHead.map((design) => {
                 return (
@@ -528,56 +555,57 @@ function Teams() {
             })}
           
           </div> */}
-          {(content === "2024") &&<> 
-            <h3
-              className="team-title"
-              style={{
-                color: "#08707f",
-                fontFamily: "Raleway,sans-serif",
-                marginBottom: "4rem",
-                marginTop: "5rem",
-              }}
-            >
-              STUDENT MEMBERS
-            </h3>
-            <div className="row">
-              {studData.map((ele, i) => {
-                console.log(ele.img);
+            {content === "2024" && (
+              <>
+                <h3
+                  className="team-title"
+                  style={{
+                    color: "#08707f",
+                    fontFamily: "Raleway,sans-serif",
+                    marginBottom: "4rem",
+                    marginTop: "5rem",
+                  }}
+                >
+                  STUDENT MEMBERS
+                </h3>
+                <div className="row">
+                  {studData.map((ele, i) => {
+                    console.log(ele.img);
 
-                return (
-                  <>
-                    <div
-                      className="studmemb row col-lg-5 col-md-7 my-4 col-sm-11 col-11 d-flex align-items-center card_ mx-auto"
-                      style={{ borderRadius: "20px" }}
-                    >
-                      <motion.div
-                        whileHover={{ scale: 1.2 }}
-                        className="col-md-4 col-sm-4 pfp"
-                      >
-                        <img
-                          style={{ border: "solid #62466b 4px" }}
-                          alt={ele.pos}
-                          className="smimage"
-                          src={ele.img}
-                        ></img>
-                      </motion.div>
-                      <div className="card-body col-md-8 col-sm-8">
-                        <h4
-                          className="card-title my-2"
-                          style={{
-                            color: "white",
-                            fontFamily: "Raleway,sans-serif",
-                          }}
+                    return (
+                      <>
+                        <div
+                          className="studmemb row col-lg-5 col-md-7 my-4 col-sm-11 col-11 d-flex align-items-center card_ mx-auto"
+                          style={{ borderRadius: "20px" }}
                         >
-                          {ele.name}
-                        </h4>
-                      </div>
-                    </div>
-                  </>
-                );
-              })}
-            </div>
-            {/* <h3
+                          <motion.div
+                            whileHover={{ scale: 1.2 }}
+                            className="col-md-4 col-sm-4 pfp"
+                          >
+                            <img
+                              style={{ border: "solid #62466b 4px" }}
+                              alt={ele.pos}
+                              className="smimage"
+                              src={ele.img}
+                            ></img>
+                          </motion.div>
+                          <div className="card-body col-md-8 col-sm-8">
+                            <h4
+                              className="card-title my-2"
+                              style={{
+                                color: "white",
+                                fontFamily: "Raleway,sans-serif",
+                              }}
+                            >
+                              {ele.name}
+                            </h4>
+                          </div>
+                        </div>
+                      </>
+                    );
+                  })}
+                </div>
+                {/* <h3
               className="team-title"
               style={{
                 color: "#08707f",
@@ -614,7 +642,8 @@ function Teams() {
                 );
               })}
             </div>  */}
-          </>}
+              </>
+            )}
           </div>
         </div>
       </section>
