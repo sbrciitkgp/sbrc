@@ -291,7 +291,12 @@ const details = [
             "IIT Kharagpur has been an incredible journey for me. The experiences, friendships, and opportunities I’ve gained here have shaped me into the person I am today. I encourage students to make the most of their time at IIT Kharagpur, explore their passions, and never stop learning.",
         },
       ],
-      interviewedBy: null,
+      interviewedBy: (
+        <i>
+          <b>Interviewed by — </b>Priyadarshi Shaket, Student Member at Branding
+          and Relations Cell, IIT Kharagpur.
+        </i>
+      ),
     },
   },
   {
