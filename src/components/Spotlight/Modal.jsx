@@ -15,7 +15,10 @@ function Modal({ modalValue, handleModalClose, isModalOpen }) {
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
-      <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl modal-fullscreen-sm-down">
+      <div
+        className="modal-dialog modal-dialog-centered modal-dialog modal-xl modal-fullscreen-sm-down"
+        style={{ width: "100vw !important" }}
+      >
         <div className="modal-content p-1">
           <div className="modal-header p-2">
             {/* <img

@@ -26,6 +26,9 @@
 .social-links i {
   font-size: 1.5rem;
 }
+.iframe-container {
+  width: 100%;
+}
 
 .iframe-container iframe {
   margin: 0;

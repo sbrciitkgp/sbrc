@@ -10,7 +10,7 @@ function Latest({ latest }) {
             <h3 className="py-2 px-1 name">
               <b>{latest.name}</b>
             </h3>
-            <div className="d-none d-md-block">
+            <div>
               <p className="card-text">
                 <i className="fa-solid fa-user-graduate p-1"></i>
                 {latest.department}
@@ -18,30 +18,18 @@ function Latest({ latest }) {
               <p className="card-text">
                 <i className="fa-solid fa-hotel p-1"></i> {latest.hall}
               </p>
-              <p className="card-text">
-                <i className="fa-solid fa-briefcase p-1"></i> {latest.work}
-              </p>
-              <section className="mt-4">
+              {latest.work && (
+                <p className="card-text">
+                  <i className="fa-solid fa-briefcase p-1"></i> {latest.work}
+                </p>
+              )}
+              <section className="mt-4 d-none d-md-block">
                 <Socials social={latest} />
               </section>
             </div>
           </div>
         </div>
         <div className="col-md-6  p-2 medium-article mt-0 mt-md-2 ">
-          <div className="d-block d-md-none">
-            <p className="card-text">
-              <i className="fa-solid fa-user-graduate p-1"></i>
-              {latest.department}
-            </p>
-            <p className="card-text">
-              <i className="fa-solid fa-hotel p-1"></i> {latest.hall}
-            </p>
-            <p className="card-text">
-              <i className="fa-solid fa-briefcase p-1"></i> {latest.work}
-            </p>
-
-            <hr />
-          </div>
           <p>
             <b>{latest.mediumArticle.introduction}</b>
           </p>
@@ -49,14 +37,22 @@ function Latest({ latest }) {
             return (
               <section key={index} className="pb-4">
                 <p>
-                  <b>{q.question}</b>
+                  <b>
+                    {"Q)"} {q.question}
+                  </b>
                 </p>
-                <p>{q.answer}</p>
+                <p style={{ whiteSpace: "pre-line" }}>
+                  <b>Ans: </b>
+                  {q.answer}
+                </p>
               </section>
             );
           })}
+          <p>{latest.mediumArticle.interviewedBy}</p>
 
-          {/* <Socials social={latest} /> */}
+          <section className="d-block d-md-none">
+            <Socials social={latest} />
+          </section>
         </div>
       </div>
     </div>
